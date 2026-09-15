@@ -1,0 +1,122 @@
+/*=====================================================================
+        MOBILE RESPONSIVENESS
+======================================================================== */
+
+@media (max-width: 991.98px) {
+  .site-header .brand-logo {
+    width: 128px;
+  }
+  .hero {
+    min-height: 760px;
+    background-position: 62% center;
+  }
+  .hero-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(3, 21, 27, 0.92) 0%,
+      rgba(3, 21, 27, 0.78) 60%,
+      rgba(3, 21, 27, 0.45) 100%
+    );
+  }
+  .section-space {
+    padding: 84px 0;
+  }
+  .belief-image {
+    min-height: 390px;
+  }
+  .stat {
+    border-right: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero {
+    min-height: 720px;
+    background-position: 65% center;
+  }
+  .hero-content {
+    padding-top: 130px;
+    padding-bottom: 60px;
+  }
+  .hero h1 {
+    font-size: 3.4rem;
+  }
+  .section-space {
+    padding: 68px 0;
+  }
+  .section-space-sm {
+    padding: 55px 0;
+  }
+  .service-card {
+    min-height: auto;
+  }
+  .service-card p {
+    min-height: auto;
+  }
+  .stat {
+    gap: 12px;
+  }
+  .stat strong {
+    font-size: 1.65rem;
+  }
+  .footer-logo {
+    width: 138px;
+  }
+}
+
+/*======
+   Back-To-Top
+========*/
+@media (max-width: 575.98px) {
+    #backToTop {
+        width: 42px;
+        height: 42px;
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+/*========================================================================================
+               WORK PAGE
+=============================================================================================*/
+@media (max-width: 767.98px) {
+
+    .work-hero {
+        min-height: 560px;
+    }
+
+    .work-hero .container-xl {
+        min-height: 560px;
+    }
+
+    .work-hero h1 {
+        font-size: clamp(2.8rem, 12vw, 4rem);
+    }
+
+    .work-hero .hero-copy {
+        max-width: 100%;
+    }
+
+}
+
+
+@media (max-width: 767.98px) {
+
+    .project-tools {
+        width: 100%;
+    }
+
+    .project-search {
+        flex: 1;
+        width: auto;
+    }
+
+    .project-sort {
+        width: 110px;
+    }
+
+    .project-filter {
+        padding: 0.5rem 0.85rem;
+    }
+
+}
