@@ -76,9 +76,9 @@
     }
 }
 
-/*========================================================================================
+/*==========================================================================================================================
                WORK PAGE
-=============================================================================================*/
+==================================================================================================================================*/
 @media (max-width: 767.98px) {
 
     .work-hero {
@@ -119,4 +119,103 @@
         padding: 0.5rem 0.85rem;
     }
 
+}
+/*==============================
+      WORK - APPROACH
+============================*/
+
+@media (max-width: 991.98px) {
+
+    .approach-content {
+        min-height: 400px;
+        padding: 60px 40px;
+    }
+
+    .approach-image {
+        min-height: 400px;
+    }
+
+    .approach-image-text {
+        right: 8%;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    .approach-content {
+        min-height: auto;
+        padding: 55px 24px;
+    }
+
+    .approach-title {
+        font-size: clamp(2.5rem, 12vw, 3.5rem);
+    }
+
+    .approach-copy {
+        max-width: 100%;
+    }
+
+    .approach-image {
+        min-height: 350px;
+    }
+}
+
+/*=====================
+  WORK - TESTIMONIALS
+==================*/
+@media (max-width: 767.98px) {
+
+    .testimonials-title {
+        font-size: 2.4rem;
+    }
+
+    .testimonial-controls {
+        margin-bottom: 2px;
+    }
+
+    .testimonial-card {
+        padding: 24px;
+        gap: 14px;
+        min-height: 250px;
+    }
+
+    .testimonial-quote {
+        font-size: 2rem;
+    }
+
+    .testimonial-text {
+        font-size: 0.85rem;
+    }
+
+    .testimonial-image {
+        min-height: 250px;
+    }
+}
+
+
+
+/*==============================================================================================================================
+                    SERVICES PAGE
+====================================================================================================================================*/
+@media (max-width: 767.98px) {
+
+    .services-hero {
+        min-height: 500px;
+    }
+
+    .services-hero .container-xl {
+        min-height: 500px;
+    }
+
+    .services-hero-title {
+        font-size: clamp(2.8rem, 13vw, 4rem);
+    }
+
+    .services-hero-copy {
+        max-width: 330px;
+    }
+
+    .services-hero-decoration {
+        display: none;
+    }
 }

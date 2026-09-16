@@ -354,14 +354,19 @@ a {
 ============================================================================================================================*/
 .work-site-header {
     background: #fff;
+    color: #0000;
 }
 
 .work-site-header .brand-logo {
     filter: none;
 }
 
-.work-site-header .nav-link {
-    color: var(--bv-ink);
+.work-site-header .nav-link{
+  color: #061c24;
+}
+
+.work-site-header.scrolled .nav-link{
+  color: #fff;
 }
 
 .work-site-header .nav-link:hover,
@@ -389,6 +394,7 @@ a {
 .project-filters {
     background: #fff;
 }
+
 
 .project-categories {
     flex: 1;
@@ -475,6 +481,274 @@ a {
     border-color: var(--bv-cyan);
     box-shadow: none;
 }
+
+.project-card-title{
+  font-size: 22px;
+}
+
+.project-card-description{
+  font-size: 15px;
+}
+
+
+
+/* =======================
+   Our Approach
+================ */
+
+.approach-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.approach-content {
+    min-height: 430px;
+    height: 100%;
+    padding: 70px 60px;
+    background: var(--bv-deep);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.approach-content .section-kicker {
+    margin-bottom: 14px;
+}
+
+.approach-title {
+    margin: 0 0 18px;
+    font-size: clamp(2.5rem, 4vw, 4.2rem);
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+    font-weight: 800;
+}
+
+.approach-title span {
+    color: var(--bv-cyan);
+}
+
+.approach-copy {
+    max-width: 440px;
+    margin-bottom: 24px;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.approach-content .btn {
+    width: fit-content;
+}
+
+.approach-image {
+    position: relative;
+    min-height: 430px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.approach-image-photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ================
+   Testimonials
+================== */
+
+.testimonials-section {
+    background: #fff;
+}
+
+.testimonials-title {
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    line-height: 1;
+    letter-spacing: -0.045em;
+    font-weight: 800;
+    color: var(--bv-ink);
+}
+
+.testimonial-controls {
+    flex-shrink: 0;
+}
+
+.testimonial-control {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 1px solid var(--bv-border);
+    border-radius: 50%;
+    background: #fff;
+    color: var(--bv-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    transition: all 0.2s ease;
+}
+
+.testimonial-control:hover {
+    border-color: var(--bv-cyan);
+    color: var(--bv-cyan);
+}
+
+.testimonial-card {
+    min-height: 220px;
+    padding: 30px;
+    border: 1px solid var(--bv-border);
+    border-radius: 8px;
+    background: #fff;
+    display: flex;
+    gap: 20px;
+}
+
+.testimonial-quote {
+    flex-shrink: 0;
+    color: var(--bv-cyan);
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.testimonial-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial-text {
+    max-width: 620px;
+    margin-bottom: 24px;
+    color: var(--bv-muted);
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
+
+.testimonial-author {
+    gap: 12px;
+}
+
+.testimonial-avatar {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--bv-surface);
+    color: var(--bv-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.45rem;
+    font-weight: 600;
+}
+
+.testimonial-name {
+    color: var(--bv-ink);
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.testimonial-company {
+    color: var(--bv-muted);
+    font-size: 0.68rem;
+    line-height: 1.3;
+}
+
+.testimonial-image-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+
+/* =======================================================================================================================
+   SERVICES PAGE
+=============================================================================================================================== */
+.services-site-header {
+    width: 100%;
+    background: #fff;
+}
+
+.services-site-header .brand-logo {
+    filter: none;
+}
+
+.services-site-header .nav-link {
+    color: var(--bv-ink);
+}
+
+.services-site-header.scrolled .nav-link{
+  color: #fff;
+}
+
+.services-site-header .nav-link:hover,
+.services-site-header .nav-link.active {
+    color: var(--bv-cyan);
+}
+
+/* =========================================
+   Services Hero
+========================================= */
+
+.services-hero {
+    min-height: 270px;
+    position: relative;
+}
+
+.services-hero-image {
+    position: absolute;
+    inset: 0;
+    background-image: url("../img/work-hero.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.services-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(3, 21, 27, 0.90) 0%,
+        rgba(3, 21, 27, 0.72) 42%,
+        rgba(3, 21, 27, 0.28) 75%,
+        rgba(3, 21, 27, 0.08) 100%
+    );
+}
+
+.services-hero .container-xl {
+    min-height: 270px;
+    display: flex;
+    align-items: center;
+}
+
+.services-hero-title {
+    margin: 0;
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    line-height: 0.94;
+    letter-spacing: -0.05em;
+    font-weight: 800;
+}
+
+.services-hero-title span {
+    color: var(--bv-cyan);
+}
+
+.services-hero-copy {
+    max-width: 410px;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+
 
 
 
