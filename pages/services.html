@@ -38,8 +38,8 @@
   </head>
   <body>
     <!----Navbar -->
-    <header class="site-header services-site-header sticky-top">
-      <nav class="navbar navbar-expand-lg navbar-light py-3 py-lg-4">
+    <header class="site-header position-absolute top-0 start-0 w-100 z-3">
+      <nav class="navbar navbar-expand-lg navbar-dark py-3 py-lg-4">
         <div class="container-xl">
           <a
             class="navbar-brand d-flex align-items-center"
@@ -52,7 +52,6 @@
               alt="Busyvine"
             />
           </a>
-
           <button
             class="navbar-toggler border-0 shadow-none"
             type="button"
@@ -63,33 +62,30 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav mx-auto gap-lg-4">
               <li class="nav-item">
-                <a class="nav-link" href="work.html"> Work </a>
+                <a class="nav-link" href="work.html">Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="services.html"> Services </a>
+                <a class="nav-link" href="#">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> About </a>
+                <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="insights.html"> Insights </a>
+                <a class="nav-link" href="insights.html">Insights</a>
               </li>
             </ul>
-            <a class="btn btn-brand" href="contact.html">
-              Start a project
-              <i class="bi bi-arrow-right ms-2"></i>
-            </a>
+            <a class="btn btn-brand" href="contact.html"
+              >Start a project <i class="bi bi-arrow-right ms-2"></i
+            ></a>
           </div>
         </div>
       </nav>
     </header>
-
-    <!----Mobile Navigation---->
-    <div
+    <!-- Mobile Navigation -->
+<div
       class="offcanvas offcanvas-end text-bg-dark"
       tabindex="-1"
       id="mobileNav"
@@ -100,7 +96,6 @@
           class="brand-logo"
           alt="Busyvine"
         />
-
         <button
           type="button"
           class="btn-close btn-close-white"
@@ -108,38 +103,36 @@
           aria-label="Close"
         ></button>
       </div>
-
       <div class="offcanvas-body d-flex flex-column">
         <div class="navbar-nav fs-4 gap-2">
-          <a class="nav-link" data-bs-dismiss="offcanvas" href="work.html">
-            Work
-          </a>
-
-          <a
-            class="nav-link active"
-            data-bs-dismiss="offcanvas"
-            href="services.html"
+          <a class="nav-link" data-bs-dismiss="offcanvas" href="work.html"
+            >Work</a
           >
-            Services
-          </a>
-
-          <a class="nav-link" data-bs-dismiss="offcanvas" href="about.html">
-            About
-          </a>
-
-          <a class="nav-link" data-bs-dismiss="offcanvas" href="insights.html">
-            Insights
-          </a>
+          <a
+            class="nav-link"
+            data-bs-dismiss="offcanvas"
+            href="#"
+            >Services</a
+          >
+          <a
+            class="nav-link"
+            data-bs-dismiss="offcanvas"
+            href="about.html"
+            >About</a
+          >
+          <a
+            class="nav-link"
+            data-bs-dismiss="offcanvas"
+            href="insights.html"
+            >Insights</a
+          >
         </div>
-
         <a
           class="btn btn-brand mt-auto"
           data-bs-dismiss="offcanvas"
           href="contact.html"
-        >
-          Start a project
-          <i class="bi bi-arrow-right ms-2"></i>
-        </a>
+          >Start a project <i class="bi bi-arrow-right ms-2"></i
+        ></a>
       </div>
     </div>
 

@@ -219,3 +219,14 @@
         display: none;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonial-control {
+    transition: none;
+  }
+
+  .testimonial-control:hover,
+  .testimonial-control:active {
+    transform: none;
+  }
+}

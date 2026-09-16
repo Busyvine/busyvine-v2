@@ -748,14 +748,27 @@ a {
     line-height: 1.5;
 }
 
+.projects-section .project-item[hidden],
+.projects-section .project-empty[hidden] {
+  display: none !important;
+}
 
+.testimonials-section .testimonial-card,
+.testimonials-section .testimonial-image {
+  overflow: hidden;
+}
 
+.testimonial-control {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
 
+.testimonial-control:hover {
+  transform: translateY(-2px);
+}
 
-
-
-
-
-
-
-
+.testimonial-control:active {
+  transform: scale(0.94);
+}
