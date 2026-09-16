@@ -97,12 +97,7 @@ a {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(3, 21, 27, 0.91) 0%,
-    rgba(3, 21, 27, 0.75) 42%,
-    rgba(3, 21, 27, 0.18) 75%,
-    rgba(3, 21, 27, 0.08) 100%
+  background: linear-gradient(90deg,rgba(3, 21, 27, 0.91) 0%,rgba(3, 21, 27, 0.75) 42%,rgba(3, 21, 27, 0.18) 75%, rgba(3, 21, 27, 0.08) 100%
   );
 }
 .hero-content {
@@ -139,6 +134,7 @@ a {
 .section-kicker {
   color: var(--bv-cyan);
   margin-bottom: 0.8rem;
+  font-size: 15px;
 }
 .section-title {
   font-size: clamp(2.4rem, 4.5vw, 4.8rem);
@@ -349,9 +345,9 @@ a {
 }
 
 
-/*=======================================================================================================================
+/*===============================================================================================
                WORK PAGE
-============================================================================================================================*/
+==============================================================================================*/
 .work-site-header {
     background: #fff;
     color: #0000;
@@ -377,7 +373,6 @@ a {
 /* =================================
    WORK PAGE HERO
 ================================= */
-
 .work-kicker {
   text-transform: uppercase;
 }
@@ -390,7 +385,6 @@ a {
 /* =================================
    PROJECT FILTERS
 ================================= */
-
 .project-filters {
     background: #fff;
 }
@@ -490,12 +484,9 @@ a {
   font-size: 15px;
 }
 
-
-
 /* =======================
    Our Approach
 ================ */
-
 .approach-section {
     width: 100%;
     overflow: hidden;
@@ -559,7 +550,6 @@ a {
 /* ================
    Testimonials
 ================== */
-
 .testimonials-section {
     background: #fff;
 }
@@ -668,9 +658,9 @@ a {
 }
 
 
-/* =======================================================================================================================
+/* ===========================================================================================
    SERVICES PAGE
-=============================================================================================================================== */
+========================================================================================= */
 .services-site-header {
     width: 100%;
     background: #fff;
@@ -693,13 +683,13 @@ a {
     color: var(--bv-cyan);
 }
 
-/* =========================================
+/* ==================
    Services Hero
-========================================= */
-
+========================= */
 .services-hero {
-    min-height: 270px;
     position: relative;
+    min-height: 500px;
+    overflow: hidden;
 }
 
 .services-hero-image {
@@ -716,23 +706,35 @@ a {
     inset: 0;
     background: linear-gradient(
         90deg,
-        rgba(3, 21, 27, 0.90) 0%,
-        rgba(3, 21, 27, 0.72) 42%,
-        rgba(3, 21, 27, 0.28) 75%,
-        rgba(3, 21, 27, 0.08) 100%
+        rgba(3, 21, 27, 0.88) 0%,
+        rgba(3, 21, 27, 0.68) 38%,
+        rgba(3, 21, 27, 0.22) 68%,
+        rgba(3, 21, 27, 0.04) 100%
     );
 }
 
-.services-hero .container-xl {
-    min-height: 270px;
+.services-hero-inner {
+    position: relative;
+    z-index: 2;
+    min-height: 265px;
     display: flex;
     align-items: center;
 }
 
+.services-hero-content {
+    width: 470px;
+    padding-top: 120px;
+}
+
+.services-hero .eyebrow {
+    margin-bottom: 8px;
+}
+
 .services-hero-title {
-    margin: 0;
-    font-size: clamp(2.8rem, 5vw, 4.5rem);
-    line-height: 0.94;
+    margin: 0 0 18px;
+    color: #fff;
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    line-height: 1;
     letter-spacing: -0.05em;
     font-weight: 800;
 }
@@ -742,9 +744,218 @@ a {
 }
 
 .services-hero-copy {
-    max-width: 410px;
-    margin-bottom: 0;
+    max-width: 390px;
+    margin: 0 0 18px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.82rem;
+    line-height: 1.45;
+}
+
+.services-hero .btn {
+    font-size: 0.75rem;
+    padding: 0.65rem 1rem;
+}
+
+.services-help {
+    background: #fff;
+}
+
+.services-help-title {
+    font-size: clamp(2.4rem, 4vw, 4rem);
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+    font-weight: 800;
+    color: var(--bv-ink);
+}
+
+.services-help-intro {
+    max-width: 420px;
+    margin-left: auto;
+    color: var(--bv-muted);
     font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.service-feature-card {
+    min-height: 300px;
+    display: flex;
+    border: 1px solid var(--bv-border);
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.service-feature-content {
+    width: 60%;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-feature-top {
+    position: relative;
+    min-height: 42px;
+    margin-bottom: 10px;
+}
+
+.service-feature-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #d7e1e4;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.service-feature-icon {
+    margin-left: 34px;
+    color: var(--bv-cyan);
+    font-size: 1.9rem;
+    line-height: 1;
+}
+
+.service-feature-content h3 {
+    margin-bottom: 6px;
+    color: var(--bv-ink);
+    font-size: 1.35rem;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.service-feature-description {
+    margin-bottom: 14px;
+    color: var(--bv-muted);
+    font-size: 17px;
+    line-height: 1.45;
+}
+
+.service-feature-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.service-feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 15px;
+    color: var(--bv-muted);
+    font-size: 14px;
+    line-height: 1.35;
+}
+
+.service-feature-list i {
+    color: var(--bv-cyan);
+    font-size: 0.72rem;
+}
+
+.service-feature-link {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    margin-top: auto;
+    color: var(--bv-cyan);
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+.service-feature-link:hover {
+    color: #008eaf;
+}
+
+.service-feature-image {
+    width: 40%;
+    overflow: hidden;
+}
+
+.service-feature-image-photo {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* =================
+   Our Process
+===================== */
+.process-section {
+    padding: 72px 0;
+    background: #f2faff;
+}
+
+.process-title {
+    color: var(--bv-ink);
+    font-size: clamp(2.4rem, 4vw, 4rem);
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+    font-weight: 800;
+}
+
+.process-intro {
+    max-width: 410px;
+    margin-left: auto;
+    color: var(--bv-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.process-steps {
+    display: flex;
+    align-items: stretch;
+}
+
+.process-step {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    padding: 0 28px;
+}
+
+.process-step:first-child {
+    padding-left: 0;
+}
+
+.process-step:last-child {
+    padding-right: 0;
+}
+
+.process-step-heading {
+    position: relative;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.process-step-icon {
+    position: relative;
+    z-index: 2;
+    color: var(--bv-cyan);
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.process-step-number {
+    margin-left: 10px;
+    color: #cbdde5;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.process-step h3 {
+    margin: 12px 0 5px;
+    color: var(--bv-ink);
+    font-size: 1rem;
+    line-height: 1.3;
+    font-weight: 800;
+}
+
+.process-step p {
+    max-width: 180px;
+    margin: 0;
+    color: var(--bv-muted);
+    font-size: 0.72rem;
     line-height: 1.5;
 }
 
@@ -752,6 +963,261 @@ a {
 .projects-section .project-empty[hidden] {
   display: none !important;
 }
+.process-arrow {
+    width: 42px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bv-cyan);
+    font-size: 1.1rem;
+}
+
+
+/* =======================
+   Why Choose Busyvine
+============ */
+.why-choose-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.why-choose-content {
+    min-height: 300px;
+    height: 100%;
+    padding: 40px 60px;
+    background: var(--bv-deep);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.why-choose-content .section-kicker {
+    margin-bottom: 8px;
+}
+
+.why-choose-title {
+    margin: 0 0 14px;
+    color: #fff;
+    font-size: clamp(2rem, 3.2vw, 3.2rem);
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+    font-weight: 800;
+}
+
+.why-choose-title span {
+    color: var(--bv-cyan);
+}
+
+.why-choose-copy {
+    max-width: 430px;
+    margin: 0 0 20px;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.78rem;
+    line-height: 1.5;
+}
+
+.why-choose-content .btn {
+    width: fit-content;
+    font-size: 0.72rem;
+    padding: 0.65rem 1rem;
+}
+
+.why-choose-image {
+    min-height: 300px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.why-choose-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* ====================
+   Trusted by Businesses
+===================== */
+.trusted-section {
+    padding: 14px 0 16px;
+    background: #fff;
+}
+
+.trusted-heading {
+    margin-bottom: 14px;
+}
+
+.trusted-section .section-kicker {
+    margin-bottom: 3px !important;
+}
+
+.trusted-title {
+    margin: 0;
+    color: var(--bv-ink);
+    font-size: 1.35rem;
+    line-height: 1.15;
+    letter-spacing: -0.035em;
+    font-weight: 800;
+}
+
+.trusted-logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.trusted-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #526970;
+    font-size: 0.85rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.trusted-more {
+    display: inline-flex;
+    align-items: center;
+    color: var(--bv-cyan);
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.trusted-more:hover {
+    color: var(--bv-ink);
+}
+
+
+/* =========================
+   FAQs & CTA
+========================= */
+.faq-cta-section{
+    background: #fff;
+}
+
+.faq-content {
+    height: 100%;
+}
+
+.faq-title {
+    color: var(--bv-ink);
+    font-size: 1.45rem;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    font-weight: 800;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.faq-item {
+    min-height: 50px;
+    padding: 6px 10px;
+    border: 1px solid var(--bv-border);
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    color: var(--bv-ink);
+    font-size: 0.62rem;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.faq-item i {
+    flex-shrink: 0;
+    color: var(--bv-cyan);
+    font-size: 0.85rem;
+    line-height: 1;
+}
+
+
+/* =========================
+   CTA
+========================= */
+.faq-cta {
+    position: relative;
+    min-height: 180px;
+    height: 100%;
+    overflow: hidden;
+
+    padding: 24px 28px;
+    border-radius: 5px;
+    background: #eaf8fc;
+}
+
+.faq-cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 210px;
+}
+
+.faq-cta .section-kicker {
+    margin-bottom: 5px !important;
+}
+
+.faq-cta-title {
+    margin: 0 0 9px;
+    color: var(--bv-ink);
+    font-size: 1.8rem;
+    line-height: .98;
+    letter-spacing: -0.05em;
+    font-weight: 800;
+}
+
+.faq-cta-copy {
+    max-width: 205px;
+    margin: 0 0 14px;
+
+    color: var(--bv-muted);
+    font-size: 0.62rem;
+    line-height: 1.4;
+}
+
+.faq-cta-buttons {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.faq-cta-buttons .btn {
+    font-size: 0.6rem;
+    padding: 0.55rem 0.75rem;
+}
+
+.faq-cta-buttons .btn-outline-dark {
+    border-color: #8ca0a4;
+    color: var(--bv-ink);
+}
+
+.faq-cta-buttons .btn-outline-dark:hover {
+    background: var(--bv-ink);
+    border-color: var(--bv-ink);
+    color: #fff;
+}
+
+
+/* Reserved space for the Figma artwork */
+.faq-cta-art {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48%;
+    height: 100%;
+}
+
 
 .testimonials-section .testimonial-card,
 .testimonials-section .testimonial-image {

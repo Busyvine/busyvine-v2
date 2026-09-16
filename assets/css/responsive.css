@@ -62,13 +62,7 @@
   .footer-logo {
     width: 138px;
   }
-}
-
-/*======
-   Back-To-Top
-========*/
-@media (max-width: 575.98px) {
-    #backToTop {
+  #backToTop {
         width: 42px;
         height: 42px;
         right: 20px;
@@ -76,11 +70,8 @@
     }
 }
 
-/*==========================================================================================================================
-               WORK PAGE
-==================================================================================================================================*/
-@media (max-width: 767.98px) {
 
+@media (max-width: 767.98px) {
     .work-hero {
         min-height: 560px;
     }
@@ -97,11 +88,7 @@
         max-width: 100%;
     }
 
-}
-
-
-@media (max-width: 767.98px) {
-
+    /*====Project===*/
     .project-tools {
         width: 100%;
     }
@@ -119,29 +106,7 @@
         padding: 0.5rem 0.85rem;
     }
 
-}
-/*==============================
-      WORK - APPROACH
-============================*/
-
-@media (max-width: 991.98px) {
-
-    .approach-content {
-        min-height: 400px;
-        padding: 60px 40px;
-    }
-
-    .approach-image {
-        min-height: 400px;
-    }
-
-    .approach-image-text {
-        right: 8%;
-    }
-}
-
-@media (max-width: 767.98px) {
-
+    /*====Approach==*/
     .approach-content {
         min-height: auto;
         padding: 55px 24px;
@@ -158,13 +123,8 @@
     .approach-image {
         min-height: 350px;
     }
-}
 
-/*=====================
-  WORK - TESTIMONIALS
-==================*/
-@media (max-width: 767.98px) {
-
+    /*===Work - Testimonials==*/
     .testimonials-title {
         font-size: 2.4rem;
     }
@@ -190,21 +150,21 @@
     .testimonial-image {
         min-height: 250px;
     }
-}
 
-
-
-/*==============================================================================================================================
-                    SERVICES PAGE
-====================================================================================================================================*/
-@media (max-width: 767.98px) {
-
+    /*====SERVICES PAGE===*/
     .services-hero {
         min-height: 500px;
     }
 
-    .services-hero .container-xl {
+    .services-hero-inner {
         min-height: 500px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        align-items: center;
+    }
+
+    .services-hero-content {
+        width: 100%;
     }
 
     .services-hero-title {
@@ -214,8 +174,60 @@
     .services-hero-copy {
         max-width: 330px;
     }
+/*---process--*/
+    .process-section {
+        padding: 60px 0;
+    }
 
-    .services-hero-decoration {
+    .process-title {
+        font-size: 2.6rem;
+    }
+
+    .process-intro {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    /* 2 × 2 grid on mobile */
+     .process-steps {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .process-step {
+        padding: 20px 16px;
+        border: 0;
+    }
+
+    .process-step-01 {
+        padding-left: 0;
+    }
+
+    .process-step-02 {
+        padding-right: 0;
+        border-left: 1px solid rgba(25, 53, 58, 0.1);
+    }
+
+    .process-step-03 {
+        padding-left: 0;
+        border-top: 1px solid rgba(25, 53, 58, 0.1);
+    }
+
+    .process-step-04 {
+        padding-right: 0;
+        border-top: 1px solid rgba(25, 53, 58, 0.1);
+        border-left: 1px solid rgba(25, 53, 58, 0.1);
+    }
+
+    .process-step {
+        border-bottom: 0;
+    }
+
+    .process-step p {
+        max-width: 100%;
+    }
+
+    .process-arrow {
         display: none;
     }
 }
@@ -229,4 +241,111 @@
   .testimonial-control:active {
     transform: none;
   }
+}
+    /*---why choose--*/
+    .why-choose-content {
+        min-height: auto;
+        padding: 50px 24px;
+    }
+
+    .why-choose-title {
+        font-size: clamp(2.4rem, 11vw, 3.5rem);
+    }
+
+    .why-choose-copy {
+        max-width: 100%;
+    }
+
+    .why-choose-image {
+        min-height: 300px;
+    }
+    /*--Trust--*/
+    .trusted-section {
+        padding: 35px 0;
+    }
+
+    .trusted-heading {
+        margin-bottom: 24px;
+    }
+
+    .trusted-title {
+        font-size: 1.3rem;
+    }
+
+    .trusted-logos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 18px;
+    }
+
+    .trusted-logo {
+        justify-content: flex-start;
+    }
+
+    .trusted-more {
+        grid-column: 1 / -1;
+    }
+    /*--FAQ--*/
+    .faq-cta-section {
+        padding: 40px 0;
+    }
+
+    .faq-title {
+        font-size: 1.4rem;
+    }
+
+    .faq-item {
+        min-height: 38px;
+        padding: 8px 10px;
+        font-size: 0.65rem;
+    }
+
+    .faq-cta {
+        min-height: 250px;
+        padding: 28px 22px;
+    }
+
+    .faq-cta-content {
+        max-width: 190px;
+    }
+
+    .faq-cta-title {
+        font-size: 2rem;
+    }
+
+    .faq-cta-copy {
+        max-width: 185px;
+    }
+
+    .faq-cta-art {
+        width: 40%;
+    }
+
+    .faq-cta-buttons .btn {
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+/*==============================
+      WORK - APPROACH
+============================*/
+@media (max-width: 991.98px) {
+    .approach-content {
+        min-height: 400px;
+        padding: 60px 40px;
+    }
+
+    .approach-image {
+        min-height: 400px;
+    }
+
+    .approach-image-text {
+        right: 8%;
+    }
 }

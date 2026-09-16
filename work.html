@@ -38,8 +38,10 @@
   </head>
   <body>
     <!---Navbar-->
-    <header class="site-header position-absolute top-0 start-0 w-100 z-3">
-      <nav class="navbar navbar-expand-lg navbar-dark py-3 py-lg-4">
+    <header
+      class="site-header work-site-header position-absolute top-0 start-0 w-100 z-3"
+    >
+      <nav class="navbar navbar-expand-lg py-3 py-lg-4">
         <div class="container-xl">
           <a
             class="navbar-brand d-flex align-items-center"
@@ -52,6 +54,7 @@
               alt="Busyvine"
             />
           </a>
+
           <button
             class="navbar-toggler border-0 shadow-none"
             type="button"
@@ -62,79 +65,101 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav mx-auto gap-lg-4">
               <li class="nav-item">
-                <a class="nav-link" href="#">Work</a>
+                <a class="nav-link active" href="work.html"> Work </a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
+                <a class="nav-link" href="services.html"> Services </a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="about.html"> About </a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="insights.html">Insights</a>
+                <a class="nav-link" href="insights.html"> Insights </a>
               </li>
             </ul>
-            <a class="btn btn-brand" href="contact.html"
-              >Start a project <i class="bi bi-arrow-right ms-2"></i
-            ></a>
+
+            <a class="btn btn-brand" href="contact.html">
+              Start a project
+              <i class="bi bi-arrow-right ms-2"></i>
+            </a>
           </div>
         </div>
       </nav>
     </header>
+
     <!-- Mobile Navigation -->
 <div
-      class="offcanvas offcanvas-end text-bg-dark"
-      tabindex="-1"
-      id="mobileNav"
-    >
-      <div class="offcanvas-header border-bottom border-secondary-subtle">
-        <img
-          src="assets/img/busyvine-logo.webp"
-          class="brand-logo"
-          alt="Busyvine"
-        />
-        <button
-          type="button"
-          class="btn-close btn-close-white"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body d-flex flex-column">
-        <div class="navbar-nav fs-4 gap-2">
-          <a class="nav-link" data-bs-dismiss="offcanvas" href="#"
-            >Work</a
-          >
-          <a
-            class="nav-link"
-            data-bs-dismiss="offcanvas"
-            href="services.html"
-            >Services</a
-          >
-          <a
-            class="nav-link"
-            data-bs-dismiss="offcanvas"
-            href="about.html"
-            >About</a
-          >
-          <a
-            class="nav-link"
-            data-bs-dismiss="offcanvas"
-            href="insights.html"
-            >Insights</a
-          >
-        </div>
-        <a
-          class="btn btn-brand mt-auto"
-          data-bs-dismiss="offcanvas"
-          href="contact.html"
-          >Start a project <i class="bi bi-arrow-right ms-2"></i
-        ></a>
-      </div>
+  class="offcanvas offcanvas-end text-bg-dark"
+  tabindex="-1"
+  id="mobileNav"
+>
+  <div class="offcanvas-header border-bottom border-secondary-subtle">
+    <img
+      src="assets/img/busyvine-logo.webp"
+      class="brand-logo"
+      alt="Busyvine"
+    />
+
+    <button
+      type="button"
+      class="btn-close btn-close-white"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+
+  <div class="offcanvas-body d-flex flex-column">
+    <div class="navbar-nav fs-4 gap-2">
+      <a
+        class="nav-link active"
+        data-bs-dismiss="offcanvas"
+        href="work.html"
+      >
+        Work
+      </a>
+
+      <a
+        class="nav-link"
+        data-bs-dismiss="offcanvas"
+        href="services.html"
+      >
+        Services
+      </a>
+
+      <a
+        class="nav-link"
+        data-bs-dismiss="offcanvas"
+        href="about.html"
+      >
+        About
+      </a>
+
+      <a
+        class="nav-link"
+        data-bs-dismiss="offcanvas"
+        href="insights.html"
+      >
+        Insights
+      </a>
     </div>
+
+    <a
+      class="btn btn-brand mt-auto"
+      data-bs-dismiss="offcanvas"
+      href="contact.html"
+    >
+      Start a project
+      <i class="bi bi-arrow-right ms-2"></i>
+    </a>
+  </div>
+</div>
 
     <!-- ================================
      Work Hero
@@ -247,10 +272,10 @@
             class="form-select"
             aria-label="Sort projects"
           >
-            <option value="original" selected>Original order</option>
-            <option value="reverse">Reverse order</option>
-            <option value="az">A - Z</option>
-            <option value="za">Z - A</option>
+            <option selected>Newest first</option>
+            <option>Oldest first</option>
+            <option>A - Z</option>
+            <option>Z - A</option>
           </select>
         </div>
       </div>
@@ -260,11 +285,9 @@
 
 <section class="projects-section pb-5 py-5">
   <div class="container-xl">
-    <p class="project-results-count text-muted" role="status" aria-live="polite" aria-atomic="true"></p>
-    <p class="project-empty text-center py-4" hidden>No projects match your search and selected category.</p>
-    <div class="row g-3" id="project-results">
+    <div class="row g-3">
       <!-- PayDay -->
-      <div class="col-md-6 col-lg-4 project-item" data-categories="brand platforms">
+      <div class="col-md-6 col-lg-4">
         <article class="project-card h-100 d-flex flex-column">
           <img
             src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&q=85"
@@ -288,7 +311,7 @@
       </div>
 
       <!-- Agrotrack -->
-      <div class="col-md-6 col-lg-4 project-item" data-categories="web">
+      <div class="col-md-6 col-lg-4">
         <article class="project-card h-100 d-flex flex-column">
           <img
                   class="project-image"
@@ -316,7 +339,7 @@
       </div>
 
       <!-- Rydr -->
-      <div class="col-md-6 col-lg-4 project-item" data-categories="mobile">
+      <div class="col-md-6 col-lg-4">
         <article class="project-card h-100 d-flex flex-column">
            <img
                   class="project-image"
@@ -341,7 +364,7 @@
       </div>
 
       <!-- EduCore -->
-      <div class="col-md-6 col-lg-4 project-item" data-categories="platforms">
+      <div class="col-md-6 col-lg-4">
         <article class="project-card h-100 d-flex flex-column">
           <div class="project-image project-image-placeholder">
             <img
@@ -368,7 +391,7 @@
       </div>
 
       <!-- HealthWeb -->
-      <div class="col-md-6 col-lg-4 project-item" data-categories="web">
+      <div class="col-md-6 col-lg-4">
         <article class="project-card h-100 d-flex flex-column">
           <div class="project-image project-image-placeholder">
             <img
@@ -394,7 +417,7 @@
       </div>
 
       <!-- CapitalGo -->
-      <div class="col-md-6 col-lg-4 project-item" data-categories="brand web platforms">
+      <div class="col-md-6 col-lg-4">
         <article class="project-card h-100 d-flex flex-column">
           <div class="project-image project-image-placeholder">
             <img
@@ -420,7 +443,7 @@
       </div>
 
       <!-- HouseMart -->
-      <div class="col-md-6 col-lg-4 project-item" data-categories="e-commerce web">
+      <div class="col-md-6 col-lg-4">
         <article class="project-card h-100 d-flex flex-column">
           <div class="project-image project-image-placeholder">
             <img
@@ -447,7 +470,7 @@
       </div>
 
       <!-- Eventix -->
-      <div class="col-md-6 col-lg-4 project-item" data-categories="mobile">
+      <div class="col-md-6 col-lg-4">
         <article class="project-card h-100 d-flex flex-column">
           <div class="project-image project-image-placeholder">
            <img
@@ -474,7 +497,7 @@
       </div>
 
       <!-- Nova -->
-      <div class="col-md-6 col-lg-4 project-item" data-categories="brand">
+      <div class="col-md-6 col-lg-4">
         <article class="project-card h-100 d-flex flex-column">
           <div class="project-image project-image-placeholder">
             <img
@@ -503,6 +526,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- =========================================
      Our Approach
@@ -613,7 +637,7 @@
           </div>
 
         </article>
-      </div> 
+      </div>
 
       <!-- Testimonial Image -->
 <div class="col-lg-4">
