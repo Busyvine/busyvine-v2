@@ -22,11 +22,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
 
-    <!-- Google Sans is not distributed through Google Fonts. This stack uses Google Sans when installed, with close system fallbacks. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -38,12 +37,12 @@
   </head>
   <body>
     <!----Navbar -->
-    <header class="site-header services-site-header sticky-top">
-      <nav class="navbar navbar-expand-lg navbar-light py-3 py-lg-4">
+    <header class="site-header position-absolute top-0 start-0 w-100 z-3">
+      <nav class="navbar navbar-expand-lg navbar-dark py-3 py-lg-4">
         <div class="container-xl">
           <a
             class="navbar-brand d-flex align-items-center"
-            href="index.html"
+            href="#top"
             aria-label="Busyvine home"
           >
             <img
@@ -52,7 +51,6 @@
               alt="Busyvine"
             />
           </a>
-
           <button
             class="navbar-toggler border-0 shadow-none"
             type="button"
@@ -63,32 +61,29 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav mx-auto gap-lg-4">
               <li class="nav-item">
-                <a class="nav-link" href="work.html"> Work </a>
+                <a class="nav-link" href="work.html">Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="services.html"> Services </a>
+                <a class="nav-link active" href="services.html">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> About </a>
+                <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="insights.html"> Insights </a>
+                <a class="nav-link" href="insights.html">Insights</a>
               </li>
             </ul>
-            <a class="btn btn-brand" href="contact.html">
-              Start a project
-              <i class="bi bi-arrow-right ms-2"></i>
-            </a>
+            <a class="btn btn-brand" href="contact.html"
+              >Start a project <i class="bi bi-arrow-right ms-2"></i
+            ></a>
           </div>
         </div>
       </nav>
     </header>
 
-    <!----Mobile Navigation---->
     <div
       class="offcanvas offcanvas-end text-bg-dark"
       tabindex="-1"
@@ -100,7 +95,6 @@
           class="brand-logo"
           alt="Busyvine"
         />
-
         <button
           type="button"
           class="btn-close btn-close-white"
@@ -108,68 +102,50 @@
           aria-label="Close"
         ></button>
       </div>
-
       <div class="offcanvas-body d-flex flex-column">
         <div class="navbar-nav fs-4 gap-2">
-          <a class="nav-link" data-bs-dismiss="offcanvas" href="work.html">
-            Work
-          </a>
-
-          <a
-            class="nav-link active"
-            data-bs-dismiss="offcanvas"
-            href="services.html"
-          >
-            Services
-          </a>
-
-          <a class="nav-link" data-bs-dismiss="offcanvas" href="about.html">
-            About
-          </a>
-
-          <a class="nav-link" data-bs-dismiss="offcanvas" href="insights.html">
-            Insights
-          </a>
+          <a class="nav-link" href="work.html">Work</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="insights.html">Insights</a>
         </div>
-
         <a
           class="btn btn-brand mt-auto"
           data-bs-dismiss="offcanvas"
           href="contact.html"
-        >
-          Start a project
-          <i class="bi bi-arrow-right ms-2"></i>
-        </a>
+          >Start a project <i class="bi bi-arrow-right ms-2"></i
+        ></a>
       </div>
     </div>
 
     <!-- =========================================
      Services Hero
 ========================================= -->
-    <section class="services-hero">
-      <div class="services-hero-image"></div>
-      <div class="services-hero-overlay"></div>
-      <div class="container-xl services-hero-inner">
-        <div class="services-hero-content">
-          <div class="eyebrow text-brand">Our Services</div>
-
-          <h1 class="services-hero-title">
-            From ideas<br />
-            <span>to impact.</span>
-          </h1>
-
-          <p class="services-hero-copy">
-            Strategy, design and technology services to help you build better,
-            work smarter and grow faster.
-          </p>
-
-          <a href="contact.html" class="btn btn-brand">
-            Let's talk
-            <i class="bi bi-arrow-right ms-2"></i>
-          </a>
+    <main id="top">
+      <section class="hero d-flex align-items-end align-items-lg-center">
+        <div class="hero-overlay"></div>
+        <div class="container-xl position-relative z-2 work-content">
+          <div class="row">
+            <div class="col-lg-7 col-xl-6">
+              <p class="text-brand mb-3 work-kicker">Our Services</p>
+              <h1 class="display-1 fw-bold text-white mb-4">
+                From ideas <br />
+                <span class="text-brand">to impact</span>
+              </h1>
+              <p class="lead text-white-75 hero-copy mb-4">
+                Strategy, design and technology services to help you better,
+                work smarter and grow faster
+              </p>
+              <div class="d-flex flex-column flex-sm-row gap-3">
+                <a class="btn btn-brand btn-lg" href="contact.html"
+                  >Let's talk <i class="bi bi-arrow-right ms-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- =========================================
      How We Help
@@ -229,7 +205,7 @@
                     Integrations &amp; APIs
                   </li>
                 </ul>
-                <a href="#" class="service-feature-link">
+                <a href="services-build.html" class="service-feature-link">
                   Learn more
                   <i class="bi bi-arrow-right ms-1"></i>
                 </a>
@@ -276,7 +252,7 @@
                     Design systems
                   </li>
                 </ul>
-                <a href="#" class="service-feature-link">
+                <a href="services-design.html" class="service-feature-link">
                   Learn more
                   <i class="bi bi-arrow-right ms-1"></i>
                 </a>
@@ -504,12 +480,12 @@
         </div>
 
         <div class="trusted-logos">
-          <div class="trusted-logo">MTN</div>
-          <div class="trusted-logo">GCB</div>
-          <div class="trusted-logo">FIDELITY BANK</div>
-          <div class="trusted-logo">Digicel</div>
-          <div class="trusted-logo">tisu</div>
-          <div class="trusted-logo">ibsa</div>
+          <div class="trusted-logo">YanoSpa</div>
+          <div class="trusted-logo">Ora</div>
+          <div class="trusted-logo">Doorzap</div>
+          <div class="trusted-logo">AB & David</div>
+          <div class="trusted-logo">Busystory</div>
+          <div class="trusted-logo">Greater Accra Regional Bar</div>
           <a href="#" class="trusted-more">
             and many more
             <i class="bi bi-arrow-right ms-1"></i>

@@ -24,13 +24,14 @@ if (backToTop) {
   function initializeProjectFilters() {
     const filters = document.querySelector('.project-filters');
     const section = document.querySelector('.projects-section');
+    const grid = section?.querySelector('#project-results');
     if (!filters || !section || filters.dataset.initialized === 'true') return;
     filters.dataset.initialized = 'true';
 
     const buttons = [...filters.querySelectorAll('.project-filter')];
     const search = filters.querySelector('.project-search input');
     const sort = filters.querySelector('.project-sort select');
-    const grid = section.querySelector('#project-results');
+
     const empty = section.querySelector('.project-empty');
     const count = section.querySelector('.project-results-count');
     const normalize = (value) => value.toLowerCase().replace(/\s+/g, ' ').trim();

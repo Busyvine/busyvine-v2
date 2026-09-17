@@ -1,94 +1,64 @@
 /*=====================================================================
         MOBILE RESPONSIVENESS
-======================================================================== */
+=====================================================================*/
 
 @media (max-width: 991.98px) {
-  .site-header .brand-logo {
-    width: 128px;
-  }
-  .hero {
-    min-height: 760px;
-    background-position: 62% center;
-  }
-  .hero-overlay {
-    background: linear-gradient(
-      90deg,
-      rgba(3, 21, 27, 0.92) 0%,
-      rgba(3, 21, 27, 0.78) 60%,
-      rgba(3, 21, 27, 0.45) 100%
-    );
-  }
-  .section-space {
-    padding: 84px 0;
-  }
-  .belief-image {
-    min-height: 390px;
-  }
-  .stat {
-    border-right: none;
-  }
-}
 
-@media (max-width: 575.98px) {
-  .hero {
-    min-height: 720px;
-    background-position: 65% center;
-  }
-  .hero-content {
-    padding-top: 130px;
-    padding-bottom: 60px;
-  }
-  .hero h1 {
-    font-size: 3.4rem;
-  }
-  .section-space {
-    padding: 68px 0;
-  }
-  .section-space-sm {
-    padding: 55px 0;
-  }
-  .service-card {
-    min-height: auto;
-  }
-  .service-card p {
-    min-height: auto;
-  }
-  .stat {
-    gap: 12px;
-  }
-  .stat strong {
-    font-size: 1.65rem;
-  }
-  .footer-logo {
-    width: 138px;
-  }
-  #backToTop {
-        width: 42px;
-        height: 42px;
-        right: 20px;
-        bottom: 20px;
+    /*=================================================================
+        GENERAL
+    =================================================================*/
+
+    .site-header .brand-logo {
+        width: 128px;
+    }
+
+    .hero-overlay {
+        background: linear-gradient(
+            90deg,
+            rgba(3, 21, 27, 0.92) 0%,
+            rgba(3, 21, 27, 0.78) 60%,
+            rgba(3, 21, 27, 0.45) 100%
+        );
+    }
+
+    .section-space {
+        padding: 84px 0;
+    }
+
+    .belief-image {
+        min-height: 390px;
+    }
+
+    .stat {
+        border-right: none;
+    }
+
+
+    /*=================================================================
+        WORK - APPROACH
+    =================================================================*/
+
+    .approach-content {
+        min-height: 400px;
+        padding: 60px 40px;
+    }
+
+    .approach-image {
+        min-height: 400px;
+    }
+
+    .approach-image-text {
+        right: 8%;
     }
 }
 
 
 @media (max-width: 767.98px) {
-    .work-hero {
-        min-height: 560px;
-    }
 
-    .work-hero .container-xl {
-        min-height: 560px;
-    }
+    /*=================================================================
+        WORK - PROJECTS
+    =================================================================*/
 
-    .work-hero h1 {
-        font-size: clamp(2.8rem, 12vw, 4rem);
-    }
-
-    .work-hero .hero-copy {
-        max-width: 100%;
-    }
-
-    /*====Project===*/
     .project-tools {
         width: 100%;
     }
@@ -106,7 +76,11 @@
         padding: 0.5rem 0.85rem;
     }
 
-    /*====Approach==*/
+
+    /*=================================================================
+        WORK - APPROACH
+    =================================================================*/
+
     .approach-content {
         min-height: auto;
         padding: 55px 24px;
@@ -124,7 +98,11 @@
         min-height: 350px;
     }
 
-    /*===Work - Testimonials==*/
+
+    /*=================================================================
+        WORK - TESTIMONIALS
+    =================================================================*/
+
     .testimonials-title {
         font-size: 2.4rem;
     }
@@ -151,7 +129,11 @@
         min-height: 250px;
     }
 
-    /*====SERVICES PAGE===*/
+
+    /*=================================================================
+        SERVICES PAGE - HERO
+    =================================================================*/
+
     .services-hero {
         min-height: 500px;
     }
@@ -174,7 +156,12 @@
     .services-hero-copy {
         max-width: 330px;
     }
-/*---process--*/
+
+
+    /*=================================================================
+        SERVICES PAGE - PROCESS
+    =================================================================*/
+
     .process-section {
         padding: 60px 0;
     }
@@ -189,7 +176,8 @@
     }
 
     /* 2 × 2 grid on mobile */
-     .process-steps {
+
+    .process-steps {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -230,19 +218,12 @@
     .process-arrow {
         display: none;
     }
-}
 
-@media (prefers-reduced-motion: reduce) {
-  .testimonial-control {
-    transition: none;
-  }
 
-  .testimonial-control:hover,
-  .testimonial-control:active {
-    transform: none;
-  }
-}
-    /*---why choose--*/
+    /*=================================================================
+        SERVICES PAGE - WHY CHOOSE
+    =================================================================*/
+
     .why-choose-content {
         min-height: auto;
         padding: 50px 24px;
@@ -259,7 +240,12 @@
     .why-choose-image {
         min-height: 300px;
     }
-    /*--Trust--*/
+
+
+    /*=================================================================
+        SERVICES PAGE - TRUSTED BY BUSINESSES
+    =================================================================*/
+
     .trusted-section {
         padding: 35px 0;
     }
@@ -285,7 +271,12 @@
     .trusted-more {
         grid-column: 1 / -1;
     }
-    /*--FAQ--*/
+
+
+    /*=================================================================
+        SERVICES PAGE - FAQ
+    =================================================================*/
+
     .faq-cta-section {
         padding: 40px 0;
     }
@@ -321,31 +312,313 @@
         width: 40%;
     }
 
+    .faq-cta-buttons {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+
     .faq-cta-buttons .btn {
-    white-space: nowrap;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+        flex: 1 1 auto;
+        min-width: 0;
+        max-width: 100%;
+        white-space: nowrap;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    /*----SERVICES-BUILD--*/
+
+    .build-page-hero {
+        min-height: 650px;
+        height: 650px;
+    }
+
+    .build-page-hero .hero-content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .build-page-hero h1 {
+        font-size: clamp(2.4rem, 10vw, 3.2rem);
+        line-height: 0.98;
+        margin-bottom: 18px !important;
+    }
+
+    .build-page-hero .build-breadcrumb {
+        margin-bottom: 14px;
+        font-size: 0.6rem;
+    }
+
+    .build-page-hero .hero-copy {
+        max-width: 330px;
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .build-page-hero .d-flex {
+        gap: 10px !important;
+    }
+
+    .build-page-hero .btn {
+        font-size: 0.8rem;
+        padding: 0.7rem 1rem;
+    }
+
+    .build-intro-content {
+        height: auto !important;
+    }
+
+    .build-intro {
+        padding: 65px 0;
+    }
+
+    .build-intro-title {
+        max-width: 100%;
+        font-size: clamp(2rem, 9vw, 2.7rem);
+        line-height: 1.05;
+    }
+
+    .build-intro-copy {
+        max-width: 100%;
+        font-size: 0.85rem;
+    }
+
+     .build-intro-image {
+        height: 300px;
+    }
+
+    .build-intro-image img {
+        height: 100%;
+    }
+
+     .build-service-card {
+        padding: 18px 15px;
+    }
+
+    .build-service-icon {
+        margin-bottom: 12px;
+        font-size: 1.25rem;
+    }
+
+    .build-service-card h3 {
+        font-size: 0.9rem;
+        margin-bottom: 7px;
+    }
+
+    .build-service-card p {
+        font-size: 0.7rem;
+        line-height: 1.45;
+        margin-bottom: 14px;
+    }
+
+    .build-service-link {
+        font-size: 0.65rem;
+        gap: 5px;
+    }
+
+     .ready-build-section {
+        padding: 25px 0 35px;
+    }
+
+    .ready-build-card {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        padding: 28px 24px 24px;
+    }
+
+    .ready-build-title {
+        font-size: clamp(2rem, 9vw, 2.6rem);
+        line-height: 1.03;
+    }
+
+    .ready-build-middle {
+        width: 100%;
+    }
+
+    .ready-build-copy {
+        max-width: 280px;
+        margin-bottom: 18px !important;
+        font-size: 0.78rem;
+        line-height: 1.55;
+    }
+
+    .ready-build-buttons {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .ready-build-buttons .btn {
+        font-size: 0.68rem;
+        padding: 0.65rem 0.8rem;
+    }
+
+    /* Artwork area remains visible on mobile */
+
+    .ready-build-art {
+        width: 100%;
+        min-height: 120px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2px;
+    }
+
+    .ready-build-art::before {
+        content: "Image here";
+        color: rgba(25, 53, 58, 0.3);
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+
+    .faq-cta-section {
+        padding: 45px 0 35px;
+    }
+
+    .faq-content {
+        padding-right: 0;
+    }
+
+    .faq-title {
+        max-width: 100%;
+        font-size: clamp(2rem, 8.5vw, 2.6rem);
+        line-height: 1.03;
+    }
+
+    .faq-btn {
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+
+    .faq-list {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        padding-top: 0;
+    }
+
+    .faq-item {
+        min-height: 34px;
+        margin-bottom: 4px;
+        padding: 7px 10px;
+
+        font-size: 0.62rem;
+    }
+
+    .faq-item i {
+        font-size: 0.75rem;
+    }
 }
 
 
 
+@media (max-width: 575.98px) {
 
+    /*=================================================================
+        GENERAL
+    =================================================================*/
 
-/*==============================
-      WORK - APPROACH
-============================*/
-@media (max-width: 991.98px) {
-    .approach-content {
-        min-height: 400px;
-        padding: 60px 40px;
+    .hero {
+        min-height: 72px;
+        background-position: 65% center;
+        padding-bottom: 22px;
     }
 
-    .approach-image {
-        min-height: 400px;
+    .hero-content {
+        padding-top: 130px;
+        padding-bottom: 60px;
     }
 
-    .approach-image-text {
-        right: 8%;
+    .hero h1 {
+        font-size: 3.4rem;
+    }
+
+    .hero-copy {
+        font-size: 15px;
+    }
+
+    .section-space {
+        padding: 68px 0;
+    }
+
+    .section-space-sm {
+        padding: 55px 0;
+    }
+
+
+    /*=================================================================
+        SERVICE CARDS
+    =================================================================*/
+
+    .service-card {
+        min-height: auto;
+    }
+
+    .service-card p {
+        min-height: auto;
+    }
+
+
+    /*=================================================================
+        STATS
+    =================================================================*/
+
+    .stat {
+        gap: 12px;
+    }
+
+    .stat strong {
+        font-size: 1.65rem;
+    }
+
+
+    /*=================================================================
+        FOOTER
+    =================================================================*/
+
+    .footer-logo {
+        width: 138px;
+    }
+
+
+    /*=================================================================
+        BACK TO TOP
+    =================================================================*/
+
+    #backToTop {
+        width: 42px;
+        height: 42px;
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+
+/*=====================================================================
+        ACCESSIBILITY - REDUCED MOTION
+=====================================================================*/
+
+@media (prefers-reduced-motion: reduce) {
+
+    .testimonial-control {
+        transition: none;
+    }
+
+    .testimonial-control:hover,
+    .testimonial-control:active {
+        transform: none;
     }
 }
