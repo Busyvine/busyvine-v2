@@ -52,8 +52,27 @@
     }
 }
 
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+    .partner-logos-track {
+        animation: none;
+    }
+}
+
 
 @media (max-width: 767.98px) {
+
+      .partner-logo {
+        flex: 0 0 130px;
+        width: 130px;
+        padding: 0 10px;
+        font-size: 0.72rem;
+    }
+
+    .partner-logos-track {
+        animation-duration: 20s;
+    }
 
     /*=================================================================
         WORK - PROJECTS
@@ -340,7 +359,7 @@
     }
 
     .build-page-hero .hero-content {
-        height: 100%;
+        height: 100vh;
         display: flex;
         align-items: center;
     }

@@ -107,8 +107,8 @@ a {
   );
 }
 .hero-content {
-  padding-top: 150px;
-  padding-bottom: 95px;
+  padding-top: 100px;
+  
 }
 .hero h1 {
   font-size: clamp(3.4rem, 6.2vw, 6.7rem);
@@ -117,7 +117,7 @@ a {
   max-width: 800px;
 }
 .hero-copy {
-  max-width: 650px;
+  max-width: 600px;
   line-height: 1.65;
 }
 .eyebrow,
@@ -166,6 +166,34 @@ a {
   font-size: 1rem;
   color: #6f7e81;
   letter-spacing: 0.02em;
+}
+
+/* ================================
+   PARTNER LOGOS SLIDER
+================================ */
+
+.partner-logos {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.partner-logos-track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: partnerLogoSlide 25s linear infinite;
+}
+
+.partner-logo {
+    flex: 0 0 150px;
+    width: 150px;
+    padding: 0 15px;
+    text-align: center;
+    white-space: nowrap;
+    color: var(--bv-ink);
+    font-size: 0.8rem;
+    font-weight: 700;
 }
 .project-card,
 .insight-card {
@@ -1617,9 +1645,6 @@ a {
     font-weight: 600;
 }
 
-
-
-
 /* =========================================
    FAQ SECTION
 ========================================= */
@@ -1697,12 +1722,91 @@ a {
 }
 
 
-/* =========================================
-   FAQ — MOBILE
-========================================= */
 
-@media (max-width: 767.98px) {
+/* Continuous movement */
+@keyframes partnerLogoSlide {
+    from {
+        transform: translateX(0);
+    }
 
-    
+    to {
+        transform: translateX(-50%);
+    }
 }
+
+
+
+/* =================================
+   ABOUT HERO
+================================= */
+
+.about-hero {
+    min-height: 285px;
+    height: 285px;
+}
+
+.about-hero .services-hero-image {
+    background-image: url("../img/work-hero.avif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-hero .services-hero-overlay {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 18, 23, 0.96) 0%,
+            rgba(3, 18, 23, 0.88) 35%,
+            rgba(3, 18, 23, 0.45) 65%,
+            rgba(3, 18, 23, 0.08) 100%
+        );
+}
+
+.about-hero .services-hero-inner {
+    min-height: 285px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.about-hero .services-hero-content {
+    width: 50%;
+}
+
+.about-hero .eyebrow {
+    margin-bottom: 8px !important;
+    font-size: 0.62rem;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.about-hero .services-hero-title {
+    margin: 0 0 12px;
+    padding-top: 0;
+
+    font-size: clamp(2.4rem, 4vw, 3.3rem);
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+    font-weight: 800;
+}
+
+.about-hero .services-hero-copy {
+    max-width: 390px;
+    margin: 0 0 16px;
+
+    font-size: 0.76rem;
+    line-height: 1.45;
+}
+
+.about-hero .btn {
+    font-size: 0.67rem;
+    padding: 0.65rem 0.9rem;
+}
+
+
+
 
