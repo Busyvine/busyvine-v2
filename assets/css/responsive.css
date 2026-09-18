@@ -254,6 +254,7 @@
 
     .why-choose-copy {
         max-width: 100%;
+        font-size: 1rem;
     }
 
     .why-choose-image {
@@ -331,25 +332,11 @@
         width: 40%;
     }
 
-    .faq-cta-buttons {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        flex-wrap: wrap;
+    .faq-cta-buttons .btn {
+        margin-bottom: 10px;
     }
 
-    .faq-cta-buttons .btn {
-        flex: 1 1 auto;
-        min-width: 0;
-        max-width: 100%;
-        white-space: nowrap;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding-left: 8px;
-        padding-right: 8px;
-    }
+   
 
     /*----SERVICES-BUILD--*/
 
@@ -391,7 +378,7 @@
 
     .build-intro-copy {
         max-width: 100%;
-        font-size: 0.85rem;
+        font-size: 1rem;
     }
 
      .build-intro-image {
@@ -412,18 +399,18 @@
     }
 
     .build-service-card h3 {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         margin-bottom: 7px;
     }
 
     .build-service-card p {
-        font-size: 0.7rem;
+        font-size: 1rem;
         line-height: 1.45;
         margin-bottom: 14px;
     }
 
     .build-service-link {
-        font-size: 0.65rem;
+        font-size: 1rem;
         gap: 5px;
     }
 
@@ -456,18 +443,11 @@
         line-height: 1.55;
     }
 
-    .ready-build-buttons {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        flex-wrap: wrap;
+    .value-card p{
+        font-size: 1rem;
     }
 
-    .ready-build-buttons .btn {
-        font-size: 0.68rem;
-        padding: 0.65rem 0.8rem;
-    }
+   
 
     /* Artwork area remains visible on mobile */
 
@@ -496,16 +476,17 @@
         padding-right: 0;
     }
 
+    .faq-content .btn {
+        margin-bottom: 12px;
+    }
+
     .faq-title {
         max-width: 100%;
         font-size: clamp(2rem, 8.5vw, 2.6rem);
         line-height: 1.03;
     }
 
-    .faq-btn {
-        margin-top: 24px;
-        margin-bottom: 12px;
-    }
+    
 
     .faq-list {
         width: 100%;
