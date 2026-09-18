@@ -111,14 +111,14 @@ a {
   
 }
 .hero h1 {
-  font-size: clamp(3.4rem, 6.2vw, 6.7rem);
-  line-height: 0.92;
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+    line-height: 0.95;
   letter-spacing: -0.055em;
   max-width: 800px;
 }
 .hero-copy {
   max-width: 600px;
-  line-height: 1.65;
+  line-height: 1.23;
 }
 .eyebrow,
 .section-kicker {
@@ -166,6 +166,16 @@ a {
   font-size: 1rem;
   color: #6f7e81;
   letter-spacing: 0.02em;
+}
+
+.partner-logo img {
+    max-width: 120px;
+    max-height: 45px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
 /* ================================
@@ -945,7 +955,7 @@ a {
     position: relative;
     z-index: 2;
     color: var(--bv-cyan);
-    font-size: 1.8rem;
+    font-size: 35px;
     line-height: 1;
 }
 
@@ -1091,6 +1101,13 @@ a {
     font-size: 0.85rem;
     font-weight: 700;
     white-space: nowrap;
+}
+
+.trusted-logo img {
+    width: 75px;
+    height: 35px;
+    object-fit: contain;
+    display: block;
 }
 
 .trusted-more {
@@ -1283,21 +1300,7 @@ a {
     Build-page 
     ========================================*/
 
-.build-page-hero {
-    min-height: 620px;
-    height: 620px;
-    overflow: hidden;
-}
 
-.build-page-hero .hero-content {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.build-page-hero .hero-content > .row {
-    width: 100%;
-}
 
 .build-page-hero .build-breadcrumb {
     margin-bottom: 14px;
@@ -1568,9 +1571,7 @@ a {
     background: #fff;
 }
 
-.ready-build-content p{
-    font-size: 20px !important;
-}
+
 
 .ready-build-card {
     position: relative;
@@ -1611,8 +1612,9 @@ a {
 .ready-build-copy {
     max-width: 310px;
     color: var(--bv-muted);
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.55;
+    
 }
 
 .ready-build-buttons {
@@ -1736,75 +1738,132 @@ a {
 
 
 
-/* =================================
-   ABOUT HERO
-================================= */
-
-.about-hero {
-    min-height: 285px;
-    height: 285px;
-}
-
-.about-hero .services-hero-image {
-    background-image: url("../img/work-hero.avif");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.about-hero .services-hero-overlay {
-    background:
-        linear-gradient(
-            90deg,
-            rgba(3, 18, 23, 0.96) 0%,
-            rgba(3, 18, 23, 0.88) 35%,
-            rgba(3, 18, 23, 0.45) 65%,
-            rgba(3, 18, 23, 0.08) 100%
-        );
-}
-
-.about-hero .services-hero-inner {
-    min-height: 285px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    display: flex;
-    align-items: center;
-}
-
-.about-hero .services-hero-content {
-    width: 50%;
-}
-
-.about-hero .eyebrow {
-    margin-bottom: 8px !important;
-    font-size: 0.62rem;
-    line-height: 1;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-}
-
-.about-hero .services-hero-title {
-    margin: 0 0 12px;
-    padding-top: 0;
-
-    font-size: clamp(2.4rem, 4vw, 3.3rem);
+/* ===============================================================================================
+   ABOUT PAGE
+========================================================================================================== */
+.about-content h1{
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
     line-height: 0.95;
-    letter-spacing: -0.05em;
+}
+
+
+/* ==========================================================
+   OUR VALUES
+========================================================== */
+
+/* ==========================================================
+   OUR VALUES
+========================================================== */
+
+.values-section {
+    padding: 45px 0 50px;
+    background: #fff;
+}
+
+.values-header {
+    margin-bottom: 22px;
+}
+
+.values-section .section-kicker {
+    margin-bottom: 7px;
+    font-size: 0.65rem;
+    line-height: 1;
+    letter-spacing: 0.08em;
+}
+
+.values-title {
+    color: var(--bv-ink);
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    line-height: 1.02;
+    letter-spacing: -0.045em;
     font-weight: 800;
 }
 
-.about-hero .services-hero-copy {
-    max-width: 390px;
-    margin: 0 0 16px;
-
-    font-size: 0.76rem;
-    line-height: 1.45;
+.values-intro {
+    max-width: 330px;
+    margin-left: auto;
+    color: var(--bv-muted);
+    font-size: 0.72rem;
+    line-height: 1.55;
 }
 
-.about-hero .btn {
-    font-size: 0.67rem;
-    padding: 0.65rem 0.9rem;
+.value-card {
+    min-height: 175px;
+    padding: 22px 18px 20px;
+    border: 1px solid var(--bv-border);
+    border-radius: 5px;
+    background: #fff;
+}
+
+.value-icon {
+    margin-bottom: 18px;
+    color: var(--bv-cyan);
+    font-size: 1.65rem;
+    line-height: 1;
+}
+
+.value-card h3 {
+    margin: 0 0 8px;
+    color: var(--bv-ink);
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight: 800;
+}
+
+.value-card p {
+    max-width: 215px;
+    margin: 0;
+    color: var(--bv-muted);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+/* ==========================================================
+   OUR VALUES — TABLET / MOBILE
+========================================================== */
+
+@media (max-width: 767.98px) {
+
+    .values-section {
+        padding: 50px 0;
+    }
+
+    .values-header {
+        margin-bottom: 22px;
+    }
+
+    .values-title {
+        font-size: clamp(2rem, 8.5vw, 2.6rem);
+        line-height: 1.04;
+    }
+
+    .values-intro {
+        max-width: 100%;
+        margin-left: 0;
+        font-size: 0.78rem;
+        line-height: 1.55;
+    }
+
+    .value-card {
+        min-height: 175px;
+        padding: 20px 16px;
+    }
+
+    .value-icon {
+        margin-bottom: 16px;
+        font-size: 35px;
+    }
+
+    .value-card h3 {
+        margin-bottom: 8px;
+    }
+
+    .value-card p {
+        max-width: 100%;
+        font-size: 0.64rem;
+        line-height: 1.5;
+    }
 }
 
 
