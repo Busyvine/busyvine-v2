@@ -1,106 +1,82 @@
 /*=====================================================================
         MOBILE RESPONSIVENESS
-======================================================================== */
+=====================================================================*/
 
 @media (max-width: 991.98px) {
-  .site-header .brand-logo {
-    width: 128px;
-  }
-  .hero {
-    min-height: 760px;
-    background-position: 62% center;
-  }
-  .hero-overlay {
-    background: linear-gradient(
-      90deg,
-      rgba(3, 21, 27, 0.92) 0%,
-      rgba(3, 21, 27, 0.78) 60%,
-      rgba(3, 21, 27, 0.45) 100%
-    );
-  }
-  .section-space {
-    padding: 84px 0;
-  }
-  .belief-image {
-    min-height: 390px;
-  }
-  .stat {
-    border-right: none;
-  }
-}
 
-@media (max-width: 575.98px) {
-  .hero {
-    min-height: 720px;
-    background-position: 65% center;
-  }
-  .hero-content {
-    padding-top: 130px;
-    padding-bottom: 60px;
-  }
-  .hero h1 {
-    font-size: 3.4rem;
-  }
-  .section-space {
-    padding: 68px 0;
-  }
-  .section-space-sm {
-    padding: 55px 0;
-  }
-  .service-card {
-    min-height: auto;
-  }
-  .service-card p {
-    min-height: auto;
-  }
-  .stat {
-    gap: 12px;
-  }
-  .stat strong {
-    font-size: 1.65rem;
-  }
-  .footer-logo {
-    width: 138px;
-  }
-}
+    /*=================================================================
+        GENERAL
+    =================================================================*/
 
-/*======
-   Back-To-Top
-========*/
-@media (max-width: 575.98px) {
-    #backToTop {
-        width: 42px;
-        height: 42px;
-        right: 20px;
-        bottom: 20px;
+    .site-header .brand-logo {
+        width: 128px;
+    }
+
+    .hero-overlay {
+        background: linear-gradient(
+            90deg,
+            rgba(3, 21, 27, 0.92) 0%,
+            rgba(3, 21, 27, 0.78) 60%,
+            rgba(3, 21, 27, 0.45) 100%
+        );
+    }
+
+    .section-space {
+        padding: 84px 0;
+    }
+
+    .belief-image {
+        min-height: 390px;
+    }
+
+    .stat {
+        border-right: none;
+    }
+
+
+    /*=================================================================
+        WORK - APPROACH
+    =================================================================*/
+
+    .approach-content {
+        min-height: 400px;
+        padding: 60px 40px;
+    }
+
+    .approach-image {
+        min-height: 400px;
+    }
+
+    .approach-image-text {
+        right: 8%;
     }
 }
 
-/*==========================================================================================================================
-               WORK PAGE
-==================================================================================================================================*/
-@media (max-width: 767.98px) {
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
 
-    .work-hero {
-        min-height: 560px;
+    .partner-logos-track {
+        animation: none;
     }
-
-    .work-hero .container-xl {
-        min-height: 560px;
-    }
-
-    .work-hero h1 {
-        font-size: clamp(2.8rem, 12vw, 4rem);
-    }
-
-    .work-hero .hero-copy {
-        max-width: 100%;
-    }
-
 }
 
 
 @media (max-width: 767.98px) {
+
+      .partner-logo {
+        flex: 0 0 130px;
+        width: 130px;
+        padding: 0 10px;
+        font-size: 0.72rem;
+    }
+
+    .partner-logos-track {
+        animation-duration: 20s;
+    }
+
+    /*=================================================================
+        WORK - PROJECTS
+    =================================================================*/
 
     .project-tools {
         width: 100%;
@@ -119,28 +95,10 @@
         padding: 0.5rem 0.85rem;
     }
 
-}
-/*==============================
-      WORK - APPROACH
-============================*/
 
-@media (max-width: 991.98px) {
-
-    .approach-content {
-        min-height: 400px;
-        padding: 60px 40px;
-    }
-
-    .approach-image {
-        min-height: 400px;
-    }
-
-    .approach-image-text {
-        right: 8%;
-    }
-}
-
-@media (max-width: 767.98px) {
+    /*=================================================================
+        WORK - APPROACH
+    =================================================================*/
 
     .approach-content {
         min-height: auto;
@@ -158,12 +116,11 @@
     .approach-image {
         min-height: 350px;
     }
-}
 
-/*=====================
-  WORK - TESTIMONIALS
-==================*/
-@media (max-width: 767.98px) {
+
+    /*=================================================================
+        WORK - TESTIMONIALS
+    =================================================================*/
 
     .testimonials-title {
         font-size: 2.4rem;
@@ -190,21 +147,25 @@
     .testimonial-image {
         min-height: 250px;
     }
-}
 
 
-
-/*==============================================================================================================================
-                    SERVICES PAGE
-====================================================================================================================================*/
-@media (max-width: 767.98px) {
+    /*=================================================================
+        SERVICES PAGE - HERO
+    =================================================================*/
 
     .services-hero {
         min-height: 500px;
     }
 
-    .services-hero .container-xl {
+    .services-hero-inner {
         min-height: 500px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        align-items: center;
+    }
+
+    .services-hero-content {
+        width: 100%;
     }
 
     .services-hero-title {
@@ -215,18 +176,434 @@
         max-width: 330px;
     }
 
-    .services-hero-decoration {
+
+    /*=================================================================
+        SERVICES PAGE - PROCESS
+    =================================================================*/
+
+    .process-section {
+        padding: 60px 0;
+    }
+
+    .process-title {
+        font-size: 2.6rem;
+    }
+
+    .process-intro {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    /* 2 × 2 grid on mobile */
+
+    .process-steps {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .process-step {
+        padding: 20px 16px;
+        border: 0;
+    }
+
+    .process-step-01 {
+        padding-left: 0;
+    }
+
+    .process-step-02 {
+        padding-right: 0;
+        border-left: 1px solid rgba(25, 53, 58, 0.1);
+    }
+
+    .process-step-03 {
+        padding-left: 0;
+        border-top: 1px solid rgba(25, 53, 58, 0.1);
+    }
+
+    .process-step-04 {
+        padding-right: 0;
+        border-top: 1px solid rgba(25, 53, 58, 0.1);
+        border-left: 1px solid rgba(25, 53, 58, 0.1);
+    }
+
+    .process-step {
+        border-bottom: 0;
+    }
+
+    .process-step p {
+        max-width: 100%;
+    }
+
+    .process-arrow {
         display: none;
+    }
+
+
+    /*=================================================================
+        SERVICES PAGE - WHY CHOOSE
+    =================================================================*/
+
+    .why-choose-content {
+        min-height: auto;
+        padding: 50px 24px;
+    }
+
+    .why-choose-title {
+        font-size: clamp(2.4rem, 11vw, 3.5rem);
+    }
+
+    .why-choose-copy {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+    .why-choose-image {
+        min-height: 300px;
+    }
+
+
+    /*=================================================================
+        SERVICES PAGE - TRUSTED BY BUSINESSES
+    =================================================================*/
+
+    .trusted-section {
+        padding: 35px 0;
+    }
+
+    .trusted-heading {
+        margin-bottom: 24px;
+    }
+
+    .trusted-title {
+        font-size: 1.3rem;
+    }
+
+    .trusted-logos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 18px;
+    }
+
+    .trusted-logo {
+        justify-content: flex-start;
+    }
+
+    .trusted-more {
+        grid-column: 1 / -1;
+    }
+
+
+    /*=================================================================
+        SERVICES PAGE - FAQ
+    =================================================================*/
+
+    .faq-cta-section {
+        padding: 40px 0;
+    }
+
+    .faq-title {
+        font-size: 1.4rem;
+    }
+
+    .faq-item {
+        min-height: 38px;
+        padding: 8px 10px;
+        font-size: 0.65rem;
+    }
+
+    .faq-cta {
+        min-height: 250px;
+        padding: 28px 22px;
+    }
+
+    .faq-cta-content {
+        max-width: 190px;
+    }
+
+    .faq-cta-title {
+        font-size: 2rem;
+    }
+
+    .faq-cta-copy {
+        max-width: 185px;
+    }
+
+    .faq-cta-art {
+        width: 40%;
+    }
+
+    .faq-cta-buttons .btn {
+        margin-bottom: 10px;
+    }
+
+   
+
+    /*----SERVICES-BUILD--*/
+
+   
+
+    .build-page-hero .build-breadcrumb {
+        margin-bottom: 14px;
+        font-size: 14px;
+    }
+
+    .build-page-hero .hero-copy {
+        max-width: 330px;
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .build-page-hero .d-flex {
+        gap: 10px !important;
+    }
+
+    .build-page-hero .btn {
+        font-size: 0.8rem;
+        
+    }
+
+    .build-intro-content {
+        height: auto !important;
+    }
+
+    .build-intro {
+        padding: 65px 0;
+    }
+
+    .build-intro-title {
+        max-width: 100%;
+        font-size: clamp(2rem, 9vw, 2.7rem);
+        line-height: 1.05;
+    }
+
+    .build-intro-copy {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+     .build-intro-image {
+        height: 300px;
+    }
+
+    .build-intro-image img {
+        height: 100%;
+    }
+
+     .build-service-card {
+        padding: 18px 15px;
+    }
+
+    .build-service-icon {
+        margin-bottom: 12px;
+        font-size: 1.25rem;
+    }
+
+    .build-service-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 7px;
+    }
+
+    .build-service-card p {
+        font-size: 1rem;
+        line-height: 1.45;
+        margin-bottom: 14px;
+    }
+
+    .build-service-link {
+        font-size: 1rem;
+        gap: 5px;
+    }
+
+     .ready-build-section {
+        padding: 25px 0 35px;
+    }
+
+    .ready-build-card {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        padding: 28px 24px 24px;
+    }
+
+    .ready-build-title {
+        font-size: clamp(2rem, 9vw, 2.6rem);
+        line-height: 1.03;
+    }
+
+    .ready-build-middle {
+        width: 100%;
+    }
+
+    .ready-build-copy {
+        max-width: 280px;
+        margin-bottom: 18px !important;
+        font-size: 0.78rem;
+        line-height: 1.55;
+    }
+
+    .value-card p{
+        font-size: 1rem;
+    }
+
+   
+
+    /* Artwork area remains visible on mobile */
+
+    .ready-build-art {
+        width: 100%;
+        min-height: 120px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2px;
+    }
+
+    .ready-build-art::before {
+        content: "Image here";
+        color: rgba(25, 53, 58, 0.3);
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+
+    .faq-cta-section {
+        padding: 45px 0 35px;
+    }
+
+    .faq-content {
+        padding-right: 0;
+    }
+
+    .faq-content .btn {
+        margin-bottom: 12px;
+    }
+
+    .faq-title {
+        max-width: 100%;
+        font-size: clamp(2rem, 8.5vw, 2.6rem);
+        line-height: 1.03;
+    }
+
+    
+
+    .faq-list {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        padding-top: 0;
+    }
+
+    .faq-item {
+        min-height: 34px;
+        margin-bottom: 4px;
+        padding: 7px 10px;
+
+        font-size: 0.62rem;
+    }
+
+    .faq-item i {
+        font-size: 0.75rem;
     }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .testimonial-control {
-    transition: none;
-  }
 
-  .testimonial-control:hover,
-  .testimonial-control:active {
-    transform: none;
-  }
+
+@media (max-width: 575.98px) {
+
+    /*=================================================================
+        GENERAL
+    =================================================================*/
+
+    .hero {
+        min-height: 72px;
+        background-position: 65% center;
+        padding-bottom: 22px;
+    }
+
+    .hero-content {
+        padding-top: 130px;
+        padding-bottom: 3vh;
+    }
+
+    .hero h1 {
+        font-size: 3.4rem;
+    }
+
+    .hero-copy {
+        font-size: 15px;
+    }
+
+    .section-space {
+        padding: 68px 0;
+    }
+
+    .section-space-sm {
+        padding: 55px 0;
+    }
+
+
+    /*=================================================================
+        SERVICE CARDS
+    =================================================================*/
+
+    .service-card {
+        min-height: auto;
+    }
+
+    .service-card p {
+        min-height: auto;
+    }
+
+
+    /*=================================================================
+        STATS
+    =================================================================*/
+
+    .stat {
+        gap: 12px;
+    }
+
+    .stat strong {
+        font-size: 1.65rem;
+    }
+
+
+    /*=================================================================
+        FOOTER
+    =================================================================*/
+
+    .footer-logo {
+        width: 138px;
+    }
+
+
+    /*=================================================================
+        BACK TO TOP
+    =================================================================*/
+
+    #backToTop {
+        width: 42px;
+        height: 42px;
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+
+/*=====================================================================
+        ACCESSIBILITY - REDUCED MOTION
+=====================================================================*/
+
+@media (prefers-reduced-motion: reduce) {
+
+    .testimonial-control {
+        transition: none;
+    }
+
+    .testimonial-control:hover,
+    .testimonial-control:active {
+        transform: none;
+    }
 }

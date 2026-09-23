@@ -1,0 +1,806 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Busyvine builds useful digital products, brands and technology experiences that work."
+    />
+    <meta name="theme-color" content="#00b2dd" />
+    <title>Services - Build | Busyvine</title>
+
+    <!-- Bootstrap 5.3.8 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!---custom css-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!---responsive css-->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!----Navbar -->
+    <header class="site-header position-absolute top-0 start-0 w-100 z-3">
+      <nav class="navbar navbar-expand-lg navbar-dark py-3 py-lg-4">
+        <div class="container-xl">
+          <a
+            class="navbar-brand d-flex align-items-center"
+            href="index.html"
+            aria-label="Busyvine home"
+          >
+            <img
+              src="assets/img/busyvine-logo.webp"
+              class="brand-logo"
+              alt="Busyvine"
+            />
+          </a>
+          <button
+            class="navbar-toggler border-0 shadow-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileNav"
+            aria-controls="mobileNav"
+            aria-label="Open navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mx-auto gap-lg-4">
+              <li class="nav-item">
+                <a class="nav-link" href="work.html">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="insights.html">Insights</a>
+              </li>
+            </ul>
+            <a class="btn btn-brand" href="contact.html"
+              >Start a project <i class="bi bi-arrow-right ms-2"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div
+      class="offcanvas offcanvas-end text-bg-dark"
+      tabindex="-1"
+      id="mobileNav"
+    >
+      <div class="offcanvas-header border-bottom border-secondary-subtle">
+        <img
+          src="assets/img/busyvine-logo.webp"
+          class="brand-logo"
+          alt="Busyvine"
+        />
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <div class="navbar-nav fs-4 gap-2">
+          <a class="nav-link" href="work.html">Work</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="insights.html">Insights</a>
+        </div>
+        <a
+          class="btn btn-brand mt-auto"
+          data-bs-dismiss="offcanvas"
+          href="contact.html"
+          >Start a project <i class="bi bi-arrow-right ms-2"></i
+        ></a>
+      </div>
+    </div>
+
+    <main id="top">
+
+    <!-- =========================
+         BUILD HERO
+    ========================== -->
+    <section class="hero build-page-hero d-flex align-items-end align-items-lg-center">
+        <div class="hero-overlay"></div>
+        <div class="container-xl position-relative z-2 hero-content">
+            <div class="row">
+                <div class="col-lg-7 col-xl-6">
+                    <!-- Breadcrumb -->
+                    <nav class="build-breadcrumb mb-4" aria-label="Breadcrumb">
+                        <a href="index.html">Home</a>
+                        <span>›</span>
+                        <a href="services.html">Services</a>
+                        <span>›</span>
+                        <span>Build</span>
+                    </nav>
+
+                    <p class="text-brand mb-3 work-kicker">
+                        BUILD
+                    </p>
+                    <h1 class="display-1 fw-bold text-white mb-4">
+                        We build <br>
+                        technology around <br>
+                        <span class="text-brand">
+                            how your business works.
+                        </span>
+                    </h1>
+                    <p class="lead text-white-75 hero-copy mb-4">
+                        Websites, applications and software designed to solve
+                        real problems, simplify operations and create better
+                        experiences.
+                    </p>
+
+                    <div class="d-flex flex-row flex-sm-row gap-3">
+                        <a class="btn btn-brand btn-lg" href="contact.html">
+                            Start a project
+                            <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-lg" href="contact.html">
+                            Talk to us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- =========================
+     WHAT WE BUILD
+========================== -->
+<section class="build-intro">
+    <div class="container-xl">
+        <div class="row align-items-stretch g-4">
+            <!-- Content -->
+            <div class="col-lg-5">
+                <div class="build-intro-content">
+                    <p class="section-kicker text-brand">
+                        WHAT WE BUILD
+                    </p>
+                    <h2 class="build-intro-title">
+                        Digital products <br> that make business simpler,
+                        faster and more impactful.
+                    </h2>
+                    <p class="build-intro-copy">
+                        We design and develop web applications, mobile apps,
+                        e-commerce platforms and custom software tailored to
+                        your goals. Whether you're starting from scratch or
+                        scaling an existing product, we bring the right mix
+                        of strategy, engineering and design to make it work.
+                    </p>
+                    <a href="contact.html" class="btn btn-brand build-intro-btn">
+                        Let's build
+                        <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Image -->
+            <div class="col-lg-7">
+                <div class="build-intro-image">
+                    <img
+                        src="assets/img/work-hero.avif"
+                        alt="Busyvine digital products"
+                    />
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     OUR BUILD SERVICES
+========================== -->
+<section class="build-services">
+    <div class="container-xl">
+        <!-- Section Header -->
+        <div class="row align-items-end g-4 build-services-header">
+            <div class="col-lg-6">
+                <p class="section-kicker text-brand mb-2">
+                    OUR BUILD SERVICES
+                </p>
+                <h2 class="build-services-title mb-0">
+                    From concept to deployment.
+                </h2>
+            </div>
+            <div class="col-lg-5 ms-lg-auto">
+                <p class="build-services-intro mb-0">
+                    We offer end-to-end development services, combining
+                    technical expertise with a deep understanding of
+                    business needs.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Service Cards -->
+        <div class="row g-3">
+            <!-- 01 -->
+            <div class="col-6 col-lg-4">
+                <article class="build-service-card h-100">
+                    <div class="build-service-icon">
+                        <i class="bi bi-display"></i>
+                    </div>
+                    <h3>Web applications</h3>
+                    <p>
+                        Scalable, secure and high-performing web applications
+                        for modern businesses.
+                    </p>
+                    <a href="#" class="build-service-link">
+                        Learn more
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+
+            <!-- 02 -->
+            <div class="col-6 col-lg-4">
+                <article class="build-service-card h-100">
+                    <div class="build-service-icon">
+                        <i class="bi bi-phone"></i>
+                    </div>
+                    <h3>Mobile applications</h3>
+                    <p>
+                        Native and cross-platform mobile apps for iOS
+                        and Android.
+                    </p>
+                    <a href="#" class="build-service-link">
+                        Learn more
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+
+            <!-- 03 -->
+            <div class="col-6 col-lg-4">
+                <article class="build-service-card h-100">
+                    <div class="build-service-icon">
+                        <i class="bi bi-cart3"></i>
+                    </div>
+                    <h3>E-commerce platforms</h3>
+                    <p>
+                        Online stores and marketplaces that drive
+                        real sales.
+                    </p>
+                    <a href="#" class="build-service-link">
+                        Learn more
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+
+            <!-- 04 -->
+            <div class="col-6 col-lg-4">
+                <article class="build-service-card h-100">
+                    <div class="build-service-icon">
+                        <i class="bi bi-code-slash"></i>
+                    </div>
+                    <h3>Custom software</h3>
+                    <p>
+                        Tailored solutions for unique business
+                        challenges.
+                    </p>
+                    <a href="#" class="build-service-link">
+                        Learn more
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+
+            <!-- 05 -->
+            <div class="col-6 col-lg-4">
+                <article class="build-service-card h-100">
+                    <div class="build-service-icon">
+                        <i class="bi bi-database"></i>
+                    </div>
+                    <h3>Integrations &amp; APIs</h3>
+                    <p>
+                        Connect your systems and automate workflows.
+                    </p>
+                    <a href="#" class="build-service-link">
+                        Learn more
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+
+            <!-- 06 -->
+            <div class="col-6 col-lg-4">
+                <article class="build-service-card h-100">
+                    <div class="build-service-icon">
+                        <i class="bi bi-gear"></i>
+                    </div>
+                    <h3>Product development</h3>
+                    <p>
+                        From MVPs to full-scale products, we help you
+                        build and scale.
+                    </p>
+                    <a href="#" class="build-service-link">
+                        Learn more
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="process-section">
+      <div class="container-xl">
+        <!-- Section Heading -->
+        <div class="row align-items-end g-4 mb-5">
+          <div class="col-lg-7">
+            <p class="section-kicker mb-2">Our Process</p>
+            <h2 class="process-title mb-0">
+              A clear path idea to launch
+            </h2>
+          </div>
+
+          <div class="col-lg-5">
+            <p class="process-intro mb-0">
+              We follow a structured, transparent process to esure you project is delivered on time, on budget and to the highest standard
+            </p>
+          </div>
+        </div>
+        <!-- Process Steps -->
+        <div class="process-steps">
+          <!-- 01 Discover -->
+          <div class="process-step process-step-01">
+            <div class="process-step-heading">
+              <i class="bi bi-chat-square-dots  process-step-icon"></i>
+              <span class="process-step-number"> 01 </span>
+            </div>
+            <h3>Discover</h3>
+            <p>We learn about your business, users and goals.</p>
+          </div>
+          <!-- Arrow -->
+          <div class="process-arrow">
+            <i class="bi bi-arrow-right"></i>
+          </div>
+          <!-- 02 Plan -->
+          <div class="process-step process-step-02">
+            <div class="process-step-heading">
+              <i class="bi bi-file-earmark-text process-step-icon"></i>
+              <span class="process-step-number"> 02 </span>
+            </div>
+            <h3>Plan</h3>
+            <p>We define the scope, roadmap and technical approach.</p>
+          </div>
+          <!-- Arrow -->
+          <div class="process-arrow">
+            <i class="bi bi-arrow-right"></i>
+          </div>
+          <!-- 03 Build -->
+          <div class="process-step process-step-03">
+            <div class="process-step-heading">
+              <i class="bi bi-code-square process-step-icon"></i>
+              <span class="process-step-number"> 03 </span>
+            </div>
+            <h3>Build</h3>
+            <p>We design, develop and test with your input.</p>
+          </div>
+          <!-- Arrow -->
+          <div class="process-arrow">
+            <i class="bi bi-arrow-right"></i>
+          </div>
+
+          <!-- 04 Launch & Grow -->
+          <div class="process-step process-step-04">
+            <div class="process-step-heading">
+              <i class="bi bi-rocket-takeoff process-step-icon"></i>
+              <span class="process-step-number"> 04 </span>
+            </div>
+            <h3>Launch</h3>
+            <p>We deploy and provide ongoing support to help you grow.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- =========================
+     FEATURED WORK
+========================== -->
+<section class="build-featured-work">
+    <div class="container-xl">
+        <!-- Section Heading -->
+        <div class="d-flex justify-content-between align-items-end gap-4 build-featured-header">
+            <div>
+                <p class="section-kicker mb-2">
+                    Featured work
+                </p>
+                <h2 class="build-featured-title mb-0">
+                    Built for real businesses.
+                </h2>
+            </div>
+            <a href="work.html" class="text-link d-none d-md-inline-flex">
+                View all work
+                <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+        </div>
+
+        <!-- Project Cards -->
+        <div class="row g-4">
+            <!-- PayDay -->
+            <div class="col-md-6 col-lg-4">
+                <article class="project-card build-project-card">
+                    <img
+                        class="project-image"
+                        src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&q=85"
+                        alt="PayDay mobile application"
+                    >
+
+                    <div class="build-project-content">
+                        <h3>PayDay</h3>
+                        <div class="build-project-meta">
+                            Mobile App <span>·</span> Fintech
+                        </div>
+                        <p>
+                            A modern financial platform designed for
+                            everyday people.
+                        </p>
+                        <a href="#" class="build-project-link">
+                            View case study
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Agrotrack -->
+            <div class="col-md-6 col-lg-4">
+                <article class="project-card build-project-card">
+                    <img
+                        class="project-image"
+                        src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=85"
+                        alt="Agrotrack web application"
+                    >
+
+                    <div class="build-project-content">
+                        <h3>Agrotrack</h3>
+                        <div class="build-project-meta">
+                            Web App <span>·</span> Agriculture
+                        </div>
+                        <p>
+                            A smarter way to manage agricultural
+                            operations.
+                        </p>
+                        <a href="#" class="build-project-link">
+                            View case study
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Rydr -->
+            <div class="col-md-6 col-lg-4">
+                <article class="project-card build-project-card">
+                    <img
+                        class="project-image"
+                        src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=85"
+                        alt="Rydr mobile application"
+                    >
+                    <div class="build-project-content">
+                        <h3>Rydr</h3>
+                        <div class="build-project-meta">
+                            Mobile App <span>·</span> Transport
+                        </div>
+                        <p>
+                            A seamless ride experience for modern
+                            cities.
+                        </p>
+                        <a href="#" class="build-project-link">
+                            View case study
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Mobile Link -->
+        <a href="work.html" class="text-link d-inline-flex d-md-none mt-4">
+            View all work
+            <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+
+    </div>
+</section>
+
+ <section class="why-choose-section">
+      <div class="row g-0">
+        <!-- Left Content -->
+        <div class="col-lg-6">
+          <div class="why-choose-content">
+            <p class="section-kicker mb-2">Why Busyvine</p>
+            <h2 class="why-choose-title">
+              More than developers.<br />
+              <span>We're your technology partner.</span>
+            </h2>
+            <p class="why-choose-copy">
+              We don't just write code. We bring strategic thinking, product mindset and long-term commitment to help you create technology that delivers real value
+            </p>
+
+            <a href="contact.html" class="btn btn-brand">
+              Let's build together
+              <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="why-choose-image">
+            <img src="assets/img/work-hero.avif" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+     Testimonials
+========================================= -->
+    <section class="testimonials-section section-space-sm">
+      <div class="container-xl">
+        <!-- Section Heading -->
+        <div class="d-flex justify-content-between align-items-end gap-4 mb-4">
+          <div>
+            <div class="section-kicker mb-2">Testimonials</div>
+            <h2 class="testimonials-title mb-0">What our clients say.</h2>
+          </div>
+          <!-- Testimonial Controls -->
+          <div class="testimonial-controls d-flex gap-2">
+            <button
+              type="button"
+              class="testimonial-control"
+              aria-label="Previous testimonial"
+            >
+              <i class="bi bi-chevron-left"></i>
+            </button>
+
+            <button
+              type="button"
+              class="testimonial-control"
+              aria-label="Next testimonial"
+            >
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Testimonial Content -->
+        <div class="row g-3 align-items-stretch">
+          <!-- Testimonial Card -->
+          <div class="col-lg-8">
+            <article class="testimonial-card h-100">
+              <div class="testimonial-quote">
+                <i class="bi bi-quote"></i>
+              </div>
+              <div class="testimonial-content">
+                <p class="testimonial-text">
+                  “Busyvine took the time to understand our business and
+                  delivered a solution that's simple, powerful and built for
+                  growth. They're more than a vendor — they're a true partner.”
+                </p>
+
+                <div class="testimonial-author d-flex align-items-center">
+                  <div class="testimonial-avatar">Image here</div>
+                  <div>
+                    <div class="testimonial-name">Product Lead</div>
+                    <div class="testimonial-company">AgriTech Company</div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Testimonial Image -->
+          <div class="col-lg-4">
+            <div class="testimonial-image">
+              <img
+                src="assets/img/work-hero.avif"
+                class="testimonial-image-photo"
+                alt="Busyvine project"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+<section class="faq-cta-section border-top">
+    <div class="container-xl">
+        <div class="row align-items-start">
+            <!-- FAQs -->
+            <div class="col-lg-5">
+                <div class="faq-content">
+                    <p class="section-kicker mb-1">
+                        FREQUENTLY ASKED QUESTIONS
+                    </p>
+                    <h2 class="faq-title mb-4">
+                        Got questions?<br />
+                        We've got answers.
+                    </h2>
+                    <a href="contact.html" class="btn btn-brand">
+                        Talk to us
+                        <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- FAQ List -->
+            <div class="col-lg-7">
+                <div class="faq-list">
+
+                    <div class="faq-item">
+                        <span>How long does a project take?</span>
+                        <i class="bi bi-plus"></i>
+                    </div>
+
+                    <div class="faq-item">
+                        <span>Do you work with international clients?</span>
+                        <i class="bi bi-plus"></i>
+                    </div>
+
+                    <div class="faq-item">
+                        <span>What technologies do you use?</span>
+                        <i class="bi bi-plus"></i>
+                    </div>
+
+                    <div class="faq-item">
+                        <span>Can you help with an existing product?</span>
+                        <i class="bi bi-plus"></i>
+                    </div>
+
+                    <div class="faq-item">
+                        <span>Do you offer ongoing support?</span>
+                        <i class="bi bi-plus"></i>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Ready to Build -->
+<section class="ready-build-section">
+  <div class="container-xl">
+    <div class="ready-build-card">
+      <div class="ready-build-content">
+        <p class="section-kicker mb-2">READY TO BUILD?</p>
+        <h2 class="ready-build-title mb-0">
+          Let's turn your idea<br />
+          into a working solution.
+        </h2>
+      </div>
+
+      <div class="ready-build-middle">
+        <p class="ready-build-copy mb-4">
+          Tell us about your project and let's explore
+          how we can make it happen.
+        </p>
+
+        <div class="ready-build-buttons">
+          <a href="contact.html" class="btn btn-brand">
+            Start a project<i class="bi bi-arrow-right ms-2"></i>
+          </a>
+
+          <a href="contact.html" class="btn btn-outline-dark">
+            Schedule a call
+          </a>
+        </div>
+      </div>
+
+      <!-- Image / artwork will be inserted later -->
+      <div class="ready-build-art" aria-hidden="true">
+        <!-- Image here -->
+      </div>
+
+    </div>
+  </div>
+</section>
+    <!---FOOTER-->
+    <footer class="site-footer py-5 py-lg-6">
+      <div class="container-xl">
+        <div class="row g-5">
+          <div class="col-lg-3">
+            <img
+              src="assets/img/busyvine-logo.webp"
+              class="footer-logo mb-3"
+              alt="Busyvine"
+            />
+            <p class="text-white-50 mb-4">We build digital things that work.</p>
+            <div class="d-flex gap-3 fs-5">
+              <a href="#" aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i></a
+              ><a href="#" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i></a
+              ><a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a
+              ><a href="#" aria-label="YouTube"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <h3 class="footer-heading">Work</h3>
+            <a href="work.html">All work</a>
+            <a href="#">Case studies</a>
+            <a href="#">Industries</a>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <h3 class="footer-heading">Services</h3>
+            <a href="services-build.html">Build</a>
+            <a href="services-design.html">Design</a><a href="services-grow.html">Grow</a>
+            <a href="services-support.html">Support</a>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <h3 class="footer-heading">Company</h3>
+            <a href="about.html">About</a>
+            <a href="#">Careers</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3">
+            <h3 class="footer-heading">Resources</h3>
+            <a href="#insights">Insights</a>
+            <a href="#">Guides</a>
+            <a href="#">Events</a>
+            <div class="mt-4 text-white-50">
+              <i class="bi bi-geo-alt-fill text-brand me-2"></i>Accra, Ghana
+            </div>
+          </div>
+        </div>
+        <hr class="border-secondary my-5" />
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between gap-3 small text-white-50"
+        >
+          <span>© Busyvine 2026. All rights reserved.</span>
+          <div class="d-flex gap-4">
+            <a href="#">Privacy</a><a href="#">Terms</a><a href="#">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!---Back-To-Top-->
+    <a
+      href="#top"
+      id="backToTop"
+      class="btn btn-info rounded-circle position-fixed d-flex align-items-center justify-content-center shadow-sm"
+      aria-label="Back to top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

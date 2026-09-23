@@ -22,11 +22,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
 
-    <!-- Google Sans is not distributed through Google Fonts. This stack uses Google Sans when installed, with close system fallbacks. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -42,7 +41,7 @@
         <div class="container-xl">
           <a
             class="navbar-brand d-flex align-items-center"
-            href="#top"
+            href="index.html"
             aria-label="Busyvine home"
           >
             <img
@@ -64,19 +63,19 @@
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav mx-auto gap-lg-4">
               <li class="nav-item">
-                <a class="nav-link" href="pages/work.html">Work</a>
+                <a class="nav-link" href="work.html">Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/services.html">Services</a>
+                <a class="nav-link" href="services.html">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/about.html">About</a>
+                <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/insights.html">Insights</a>
+                <a class="nav-link" href="insights.html">Insights</a>
               </li>
             </ul>
-            <a class="btn btn-brand" href="pages/contact.html"
+            <a class="btn btn-brand" href="contact.html"
               >Start a project <i class="bi bi-arrow-right ms-2"></i
             ></a>
           </div>
@@ -104,32 +103,12 @@
       </div>
       <div class="offcanvas-body d-flex flex-column">
         <div class="navbar-nav fs-4 gap-2">
-          <a class="nav-link" data-bs-dismiss="offcanvas" href="pages/work.html"
-            >Work</a
-          >
-          <a
-            class="nav-link"
-            data-bs-dismiss="offcanvas"
-            href="pages/services.html"
-            >Services</a
-          >
-          <a
-            class="nav-link"
-            data-bs-dismiss="offcanvas"
-            href="pages/about.html"
-            >About</a
-          >
-          <a
-            class="nav-link"
-            data-bs-dismiss="offcanvas"
-            href="pages/insights.html"
-            >Insights</a
-          >
+          <a class="nav-link" href="work.html">Work</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="insights.html">Insights</a>
         </div>
-        <a
-          class="btn btn-brand mt-auto"
-          data-bs-dismiss="offcanvas"
-          href="pages/contact.html"
+        <a class="btn btn-brand mt-auto" href="contact.html"
           >Start a project <i class="bi bi-arrow-right ms-2"></i
         ></a>
       </div>
@@ -152,11 +131,11 @@
                 Strategy, design and technology for businesses that want to
                 build better, work smarter and grow.
               </p>
-              <div class="d-flex flex-column flex-sm-row gap-3">
-                <a class="btn btn-brand btn-lg" href="pages/contact.html"
+              <div class="d-flex flex-row flex-sm-row gap-3">
+                <a class="btn btn-brand" href="contact.html"
                   >Start a project <i class="bi bi-arrow-right ms-2"></i
                 ></a>
-                <a class="btn btn-outline-light btn-lg" href="pages/work.html"
+                <a class="btn btn-outline-light" href="work.html"
                   >See our work <i class="bi bi-arrow-down ms-2"></i
                 ></a>
               </div>
@@ -176,15 +155,38 @@
               </div>
             </div>
             <div class="col-lg-9">
-              <div
-                class="row row-cols-3 row-cols-md-6 g-4 align-items-center text-center partner-logos"
-              >
-                <div class="col">MTN</div>
-                <div class="col">GCB</div>
-                <div class="col">FIDELITY</div>
-                <div class="col">DIGICEL</div>
-                <div class="col">TISU</div>
-                <div class="col">IABSA</div>
+              <div class="partner-logos">
+                <div class="partner-logos-track">
+                  <!-- First set -->
+                  <div class="partner-logo">YanoSpa</div>
+                  <div class="partner-logo">
+                    <img src="assets/img/ora-logo.jpeg" alt="Ora logo" />
+                  </div>
+                  <div class="partner-logo">
+                    <img
+                      src="assets/img/doorzap-logo.jpeg"
+                      alt="Doorzap logo"
+                    />
+                  </div>
+                  <div class="partner-logo">AB &amp; David</div>
+                  <div class="partner-logo">Busystory</div>
+                  <div class="partner-logo">Greater Accra Regional Bar</div>
+
+                  <!-- Duplicate set for seamless loop -->
+                  <div class="partner-logo">YanoSpa</div>
+                  <div class="partner-logo">
+                    <img src="assets/img/ora-logo.jpeg" alt="Ora logo" />
+                  </div>
+                  <div class="partner-logo">
+                    <img
+                      src="assets/img/doorzap-logo.jpeg"
+                      alt="Doorzap logo"
+                    />
+                  </div>
+                  <div class="partner-logo">AB &amp; David</div>
+                  <div class="partner-logo">Busystory</div>
+                  <div class="partner-logo">Greater Accra Regional Bar</div>
+                </div>
               </div>
             </div>
           </div>
@@ -203,7 +205,7 @@
                 make happen.
               </h2>
             </div>
-            <a class="text-link d-none d-md-inline-flex" href="#"
+            <a class="text-link d-none d-md-inline-flex" href="work.html"
               >View all work <i class="bi bi-arrow-right ms-2"></i
             ></a>
           </div>
@@ -310,7 +312,7 @@
                   Websites, platforms and software designed around how your
                   business works.
                 </p>
-                <a href="#" class="text-link"
+                <a href="services-build.html" class="text-link"
                   >Explore Build <i class="bi bi-arrow-right ms-1"></i
                 ></a>
               </div>
@@ -324,7 +326,7 @@
                   Brands and digital experiences that are clear, intuitive and
                   memorable.
                 </p>
-                <a href="#" class="text-link"
+                <a href="services-design.html" class="text-link"
                   >Explore Design <i class="bi bi-arrow-right ms-1"></i
                 ></a>
               </div>
@@ -340,7 +342,7 @@
                   Strategies and campaigns to help you get discovered and drive
                   real growth.
                 </p>
-                <a href="#" class="text-link"
+                <a href="services-grow.html" class="text-link"
                   >Explore Grow <i class="bi bi-arrow-right ms-1"></i
                 ></a>
               </div>
@@ -354,7 +356,7 @@
                   Ongoing support, maintenance and expertise to keep everything
                   running smoothly.
                 </p>
-                <a href="#" class="text-link"
+                <a href="services-support.html" class="text-link"
                   >Explore Support <i class="bi bi-arrow-right ms-1"></i
                 ></a>
               </div>
@@ -507,10 +509,8 @@
                 </p>
               </div>
               <div class="col-lg-3">
-                <div class="d-grid gap-2">
-                  <a
-                    href="mailto:hello@busyvine.com"
-                    class="btn btn-brand btn-lg"
+                <div class="d-flex flex-column align-items-start gap-2">
+                  <a href="mailto:hello@busyvine.com" class="btn btn-brand"
                     >Start a project <i class="bi bi-arrow-right ms-2"></i></a
                   ><a
                     href="mailto:hello@busyvine.com"
@@ -548,25 +548,26 @@
           </div>
           <div class="col-6 col-md-3 col-lg-2">
             <h3 class="footer-heading">Work</h3>
-            <a href="#work">All work</a>
+            <a href="work.html">All work</a>
             <a href="#">Case studies</a>
             <a href="#">Industries</a>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
             <h3 class="footer-heading">Services</h3>
-            <a href="#services">Build</a>
-            <a href="#services">Design</a><a href="#services">Grow</a>
-            <a href="#services">Support</a>
+            <a href="services-build.html">Build</a>
+            <a href="services-design.html">Design</a
+            ><a href="services-grow.html">Grow</a>
+            <a href="services-support.html">Support</a>
           </div>
           <div class="col-6 col-md-3 col-lg-2">
             <h3 class="footer-heading">Company</h3>
-            <a href="#about">About</a>
+            <a href="about.html">About</a>
             <a href="#">Careers</a>
-            <a href="#contact">Contact</a>
+            <a href="contact.html">Contact</a>
           </div>
           <div class="col-6 col-md-3 col-lg-3">
             <h3 class="footer-heading">Resources</h3>
-            <a href="#insights">Insights</a>
+            <a href="insights.html">Insights</a>
             <a href="#">Guides</a>
             <a href="#">Events</a>
             <div class="mt-4 text-white-50">
