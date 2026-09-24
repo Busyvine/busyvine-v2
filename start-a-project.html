@@ -8,7 +8,7 @@
       content="Busyvine builds useful digital products, brands and technology experiences that work."
     />
     <meta name="theme-color" content="#00b2dd" />
-    <title>Contact Us | Busyvine</title>
+    <title>Start a Project | Busyvine</title>
 
     <!-- Bootstrap 5.3.8 -->
     <link
@@ -35,11 +35,8 @@
     <!---responsive css-->
     <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
-
   <body>
-    <!-- =========================
-         NAVBAR
-    ========================== -->
+    <!----Navbar -->
     <header class="site-header position-absolute top-0 start-0 w-100 z-3">
       <nav class="navbar navbar-expand-lg navbar-dark py-3 py-lg-4">
         <div class="container-xl">
@@ -112,141 +109,144 @@
           <a class="nav-link" href="about.html">About</a>
           <a class="nav-link" href="insights.html">Insights</a>
         </div>
-        <a class="btn btn-brand mt-auto" href="start-a-project.html"
+        <a
+          class="btn btn-brand mt-auto"
+          data-bs-dismiss="offcanvas"
+          href="start-a-project.html"
           >Start a project <i class="bi bi-arrow-right ms-2"></i
         ></a>
       </div>
     </div>
 
     <!---Main section-->
-    <section class="contact-hero d-flex align-items-end align-items-lg-center">
+    <section class="contact-hero">
       <div class="hero-overlay"></div>
       <div class="container-xl position-relative z-2 contact-hero-content">
         <div class="row">
           <div class="col-lg-6 col-xl-5">
-            <p class="eyebrow text-brand mb-3">contact us</p>
+            <p class="eyebrow text-brand mb-3">Start a Project</p>
             <h1>
-              Let's talk<br />
-              about what's<br />
-              <span class="text-brand">next.</span>
+              Good ideas<br />
+              <span class="text-brand">build what's next.</span>
             </h1>
             <p class="contact-hero-copy">
-              Have a question, idea or project in mind?<br />
-              We'd love to hear from you.
+              Tell us what you're working on and let's make it happen.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="contact-info-section">
+    <section class="project-enquiry-section">
       <div class="container-xl">
-        <div class="row g-5 align-items-start">
-          <!-- Contact Details -->
+        <div class="row g-4 g-lg-5 align-items-start">
+          <!-- Left side -->
           <div class="col-lg-5">
-            <div class="contact-details">
-              <p class="section-kicker mb-2">Get in touch</p>
-              <h2 class="contact-section-title">Get in touch</h2>
-              <p class="contact-section-intro">
-                Choose the best way to reach us.
+            <div class="project-intro">
+              <div class="project-intro-image">
+                <img src="assets/img/work-hero.avif" alt="Busyvine workspace" />
+              </div>
+              <p class="section-kicker mt-4 mb-2">WORK WITH US</p>
+              <h2 class="project-intro-title">
+                From idea<br />
+                to real impact.
+              </h2>
+              <p class="project-intro-copy">
+                We help businesses design, build and grow digital products,
+                brands and experiences.
               </p>
 
-              <div class="contact-details-list">
-                <!-- Email -->
-                <div class="contact-detail">
-                  <div class="contact-detail-icon">
-                    <i class="bi bi-envelope"></i>
-                  </div>
-
-                  <div>
-                    <h3>Email</h3>
-                    <a href="mailto:hello@busyvine.com"> hello@busyvine.com </a>
-                    <p>We usually respond within 1 business day.</p>
-                  </div>
+              <div class="project-benefits">
+                <div class="project-benefit">
+                  <i class="bi bi-lightning-charge"></i>
+                  <span>Simple<br />process</span>
                 </div>
 
-                <!-- Phone -->
-                <div class="contact-detail">
-                  <div class="contact-detail-icon">
-                    <i class="bi bi-telephone"></i>
-                  </div>
-                  <div>
-                    <h3>Phone</h3>
-                    <a href="tel:+233241234567"> +233 24 123 4567 </a>
-                    <p>Mon – Fri, 9am – 5pm (GMT)</p>
-                  </div>
+                <div class="project-benefit">
+                  <i class="bi bi-people"></i>
+                  <span>Fast<br />response</span>
                 </div>
 
-                <!-- Office -->
-                <div class="contact-detail">
-                  <div class="contact-detail-icon">
-                    <i class="bi bi-geo-alt-fill"></i>
-                  </div>
-                  <div>
-                    <h3>Office</h3>
-                    <p class="contact-detail-main">Accra, Ghana</p>
-                    <p>Visit us by appointment.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="contact-socials">
-                <h3>Follow our journey</h3>
-                <div class="d-flex gap-3">
-                  <a href="#" aria-label="LinkedIn">
-                    <i class="bi bi-linkedin"></i>
-                  </a>
-
-                  <a href="#" aria-label="Instagram">
-                    <i class="bi bi-instagram"></i>
-                  </a>
-
-                  <a href="#" aria-label="X">
-                    <i class="bi bi-twitter-x"></i>
-                  </a>
-
-                  <a href="#" aria-label="YouTube">
-                    <i class="bi bi-youtube"></i>
-                  </a>
+                <div class="project-benefit">
+                  <i class="bi bi-bar-chart-line"></i>
+                  <span>Real<br />outcomes</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Contact Form -->
+          <!-- Right side -->
           <div class="col-lg-7">
-            <div class="contact-form-card">
-              <h2>Send us a message</h2>
-              <p>
-                Tell us a bit about what you need and we’ll get back to you.
-              </p>
+            <div class="project-form-card">
+              <h2 class="project-form-title">Tell us about your project.</h2>
+              <!-- Project type -->
+              <div class="project-types">
+                <button
+                  type="button"
+                  class="project-type active"
+                  data-project-type="Build"
+                >
+                  <i class="bi bi-boxes"></i>
+                  <strong>Build</strong>
+                  <span>Web, mobile,<br />software</span>
+                </button>
 
-              <form>
+                <button
+                  type="button"
+                  class="project-type"
+                  data-project-type="Design"
+                >
+                  <i class="bi bi-pencil"></i>
+                  <strong>Design</strong>
+                  <span>Brand, UI/UX,<br />product</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="project-type"
+                  data-project-type="Grow"
+                >
+                  <i class="bi bi-bar-chart-line"></i>
+                  <strong>Grow</strong>
+                  <span>Strategy,<br />marketing, content</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="project-type"
+                  data-project-type="Support"
+                >
+                  <i class="bi bi-life-preserver"></i>
+                  <strong>Support</strong>
+                  <span>Maintenance,<br />infra, support</span>
+                </button>
+              </div>
+
+              <form class="project-form">
+                <input
+                  type="hidden"
+                  name="project_type"
+                  id="projectType"
+                  value="Build"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your name"
+                />
+
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Company name"
+                />
+
                 <div class="row g-3">
-                  <div class="col-md-6">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Your name"
-                      aria-label="Your name"
-                    />
-                  </div>
-
-                  <div class="col-md-6">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Company name"
-                      aria-label="Company name"
-                    />
-                  </div>
-
                   <div class="col-md-6">
                     <input
                       type="email"
                       class="form-control"
-                      placeholder="Your email"
-                      aria-label="Your email"
+                      placeholder="Work email"
                     />
                   </div>
 
@@ -254,72 +254,48 @@
                     <input
                       type="tel"
                       class="form-control"
-                      placeholder="Phone number (optional)"
-                      aria-label="Phone number (optional)"
+                      placeholder="Phone number"
                     />
                   </div>
+                </div>
 
-                  <div class="col-12">
-                    <textarea
-                      class="form-control"
-                      rows="5"
-                      placeholder="How can we help?"
-                      aria-label="How can we help?"
-                    ></textarea>
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  placeholder="Tell us a bit about your project..."
+                ></textarea>
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label"> Estimated timeline </label>
+
+                    <select class="form-select">
+                      <option selected disabled>Select</option>
+                      <option>Less than 1 month</option>
+                      <option>1–3 months</option>
+                      <option>3–6 months</option>
+                      <option>6+ months</option>
+                    </select>
                   </div>
 
-                  <div class="col-12">
-                    <button type="submit" class="btn btn-brand">
-                      Send message
-                      <i class="bi bi-arrow-right ms-2"></i>
-                    </button>
+                  <div class="col-md-6">
+                    <label class="form-label"> Estimated budget </label>
+
+                    <select class="form-select">
+                      <option selected disabled>Select</option>
+                      <option>Under GH₵10,000</option>
+                      <option>GH₵10,000–25,000</option>
+                      <option>GH₵25,000–50,000</option>
+                      <option>GH₵50,000+</option>
+                    </select>
                   </div>
                 </div>
+
+                <button type="submit" class="btn btn-brand">
+                  Send project enquiry
+                  <i class="bi bi-arrow-right ms-2"></i>
+                </button>
               </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="office-location-section">
-      <div class="row g-0">
-        <!-- Office Image -->
-        <div class="col-lg-6">
-          <div class="office-image">
-            <img src="assets/img/work-hero.avif" alt="Busyvine office" />
-          </div>
-        </div>
-
-        <!-- Office Location -->
-        <div class="col-lg-6">
-          <div class="office-map">
-            <div class="office-map-label airport-label">
-              AIRPORT<br />
-              RESIDENTIAL<br />
-              AREA
-            </div>
-
-            <div class="office-map-label cantonments-label">CANTONMENTS</div>
-
-            <div class="office-map-label labone-label">LABONE</div>
-
-            <div class="office-map-label osu-label">OSU</div>
-
-            <!-- Location Pin -->
-            <div class="office-map-pin">
-              <i class="bi bi-geo-alt-fill"></i>
-            </div>
-
-            <!-- Office Card -->
-            <div class="office-card">
-              <h3>Our office</h3>
-              <p>Accra, Ghana</p>
-
-              <a href="#" class="office-directions">
-                Get directions
-                <i class="bi bi-arrow-right ms-2"></i>
-              </a>
             </div>
           </div>
         </div>

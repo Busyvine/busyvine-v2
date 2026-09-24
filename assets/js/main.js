@@ -121,7 +121,7 @@ const testimonials = [
     name: "Product Lead",
     company: "AgriTech Company",
     initials: "PL",
-    image: "../assets/img/work-hero.avif",
+    image: "assets/img/work-hero.avif",
     imageAlt: "Busyvine project"
     },
     {
@@ -133,7 +133,7 @@ const testimonials = [
     name: "Spa Manager",
     company: "Spa Company",
     initials: "SM",
-    image: "../assets/img/work-hero.avif",
+    image: "assets/img/work-hero.avif",
     imageAlt: "Spa management system project"
     },
     {
@@ -145,7 +145,7 @@ const testimonials = [
     name: "Business Owner",
     company: "Food Delivery Company",
     initials: "BO",
-    image: "../assets/img/work-hero.avif",
+    image: "assets/img/work-hero.avif",
     imageAlt: "Food delivery website project"
     }
 ];
@@ -302,4 +302,106 @@ document.addEventListener(
 );
 } else {
 initializeTestimonials();
+}
+
+
+///Term of use update
+const lastUpdated = document.getElementById("lastUpdated");
+
+if (lastUpdated) {
+    const revisionDate = new Date(2026, 8, 24);
+
+    lastUpdated.textContent = revisionDate.toLocaleDateString("en-GB", {
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+    });
+}
+
+
+//Insights
+(() => {
+    const section = document.querySelector(".insights-section");
+
+    if (!section) return;
+
+    const filters = section.querySelectorAll(".insight-filter");
+    const search = section.querySelector("#insightSearch");
+    const articles = section.querySelectorAll(".insight-item");
+    const empty = section.querySelector("#insightsEmpty");
+
+    let selectedCategory = "all";
+
+    const normalize = (value) =>
+        value.toLowerCase().replace(/\s+/g, " ").trim();
+
+    function filterArticles() {
+        const searchTerm = normalize(search.value);
+        let visibleArticles = 0;
+
+        articles.forEach((article) => {
+            const category = article.dataset.category;
+            const title = normalize(article.dataset.title);
+
+            const matchesCategory =
+                selectedCategory === "all" ||
+                category === selectedCategory;
+
+            const matchesSearch =
+                !searchTerm ||
+                title.includes(searchTerm);
+
+            const shouldShow =
+                matchesCategory && matchesSearch;
+
+            article.hidden = !shouldShow;
+
+            if (shouldShow) {
+                visibleArticles++;
+            }
+        });
+
+        empty.hidden = visibleArticles !== 0;
+    }
+
+    filters.forEach((button) => {
+        button.addEventListener("click", () => {
+            selectedCategory = button.dataset.filter;
+
+            filters.forEach((filter) => {
+                const active = filter === button;
+
+                filter.classList.toggle("active", active);
+                filter.setAttribute("aria-selected", String(active));
+            });
+
+            filterArticles();
+        });
+    });
+
+    search.addEventListener("input", filterArticles);
+
+    filterArticles();
+})();
+
+
+//Start a project cards
+const projectTypes = document.querySelectorAll(".project-type");
+const projectTypeInput = document.getElementById("projectType");
+
+if (projectTypes.length) {
+    projectTypes.forEach((type) => {
+        type.addEventListener("click", () => {
+
+            projectTypes.forEach((item) => {
+                item.classList.remove("active");
+            });
+
+            type.classList.add("active");
+
+            if (projectTypeInput) {
+                projectTypeInput.value = type.dataset.projectType;
+            }
+        });
+    });
 }

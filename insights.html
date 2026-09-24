@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Busyvine builds useful digital products, brands and technology experiences that work."
+    />
+    <meta name="theme-color" content="#00b2dd" />
+    <title>Insights | Busyvine</title>
+
+    <!-- Bootstrap 5.3.8 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!---custom css-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!---responsive css-->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!----Navbar -->
+    <header class="site-header position-absolute top-0 start-0 w-100 z-3">
+      <nav class="navbar navbar-expand-lg navbar-dark py-3 py-lg-4">
+        <div class="container-xl">
+          <a
+            class="navbar-brand d-flex align-items-center"
+            href="index.html"
+            aria-label="Busyvine home"
+          >
+            <img
+              src="assets/img/busyvine-logo.webp"
+              class="brand-logo"
+              alt="Busyvine"
+            />
+          </a>
+          <button
+            class="navbar-toggler border-0 shadow-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileNav"
+            aria-controls="mobileNav"
+            aria-label="Open navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mx-auto gap-lg-4">
+              <li class="nav-item">
+                <a class="nav-link" href="work.html">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="insights.html">Insights</a>
+              </li>
+            </ul>
+            <a class="btn btn-brand" href="start-a-project.html"
+              >Start a project <i class="bi bi-arrow-right ms-2"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div
+      class="offcanvas offcanvas-end text-bg-dark"
+      tabindex="-1"
+      id="mobileNav"
+    >
+      <div class="offcanvas-header border-bottom border-secondary-subtle">
+        <img
+          src="assets/img/busyvine-logo.webp"
+          class="brand-logo"
+          alt="Busyvine"
+        />
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <div class="navbar-nav fs-4 gap-2">
+          <a class="nav-link" href="work.html">Work</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="insights.html">Insights</a>
+        </div>
+        <a
+          class="btn btn-brand mt-auto"
+          data-bs-dismiss="offcanvas"
+          href="start-a-project.html"
+          >Start a project <i class="bi bi-arrow-right ms-2"></i
+        ></a>
+      </div>
+    </div>
+
+    <!---Main section-->
+    <section class="contact-hero">
+      <div class="hero-overlay"></div>
+      <div class="container-xl position-relative z-2 contact-hero-content">
+        <div class="row">
+          <div class="col-lg-6 col-xl-5">
+            <p class="eyebrow text-brand mb-3">Insights</p>
+            <h1>
+              Ideas for a more
+              <span class="text-brand">useful tomorrow.</span>
+            </h1>
+            <p class="contact-hero-copy mb-2">
+              Practical thoughts, lessons and perspectives on design,
+              technology, growth and building better businesses.
+            </p>
+            <a href="#articles" class="btn btn-brand">
+              Explore articles
+              <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="insights-section" id="articles">
+      <div class="container-xl">
+        <!-- Filters -->
+        <div class="insights-toolbar">
+          <div
+            class="insights-filters"
+            role="tablist"
+            aria-label="Filter insights"
+          >
+            <button
+              class="insight-filter active"
+              type="button"
+              data-filter="all"
+            >
+              All
+            </button>
+            <button class="insight-filter" type="button" data-filter="design">
+              Design
+            </button>
+            <button
+              class="insight-filter"
+              type="button"
+              data-filter="technology"
+            >
+              Technology
+            </button>
+            <button class="insight-filter" type="button" data-filter="growth">
+              Growth
+            </button>
+            <button class="insight-filter" type="button" data-filter="business">
+              Business
+            </button>
+            <button class="insight-filter" type="button" data-filter="culture">
+              Culture
+            </button>
+            <button class="insight-filter" type="button" data-filter="product">
+              Product
+            </button>
+            <button class="insight-filter" type="button" data-filter="industry">
+              Industry
+            </button>
+          </div>
+
+          <div class="insights-search">
+            <i class="bi bi-search"></i>
+
+            <input
+              class="form-control"
+              type="search"
+              id="insightSearch"
+              placeholder="Search articles..."
+              aria-label="Search articles"
+            />
+          </div>
+        </div>
+
+        <!-- Articles -->
+        <div class="row g-3" id="insightsGrid">
+          <!-- Featured Article -->
+          <div
+            class="col-lg-8 insight-item"
+            data-category="business"
+            data-title="From idea to impact what it really takes to build digital products in Ghana"
+          >
+            <a href="#" class="insight-card insight-card-featured h-100">
+              <div class="insight-card-image">
+                <img
+                  src="assets/img/work-hero.avif"
+                  alt="From idea to impact"
+                />
+              </div>
+
+              <div class="insight-card-body">
+                <span class="insight-category">BUSINESS</span>
+
+                <h2>
+                  From idea to impact: what it really takes to build digital
+                  products in Ghana
+                </h2>
+
+                <p>
+                  Lessons from the frontlines of building useful digital
+                  products for real businesses.
+                </p>
+
+                <div class="insight-meta">
+                  <div class="insight-author">
+                    <div class="insight-avatar">NO</div>
+
+                    <div>
+                      <strong>Nana Owusu-Marfo</strong>
+                      <span>16 Sep 2026 · 8 min read</span>
+                    </div>
+                  </div>
+
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Promo card -->
+          <div class="col-lg-4">
+            <div class="insight-promo h-100">
+              <img
+                src="#"
+                alt="Better businesses start with better ideas"
+                class="insight-promo-image"
+              />
+            </div>
+          </div>
+
+          <!-- Design -->
+          <div
+            class="col-md-4 insight-item"
+            data-category="design"
+            data-title="designing for real people not just users"
+          >
+            <a href="#" class="insight-card h-100">
+              <div class="insight-card-image">
+                <img
+                  src="assets/img/work-hero.avif"
+                  alt="Designing for real people"
+                />
+              </div>
+              <div class="insight-card-body">
+                <span class="insight-category">DESIGN</span>
+                <h2>Designing for real people, not just users</h2>
+                <p>
+                  Why great design starts with a deeper understanding of the
+                  people you're building for.
+                </p>
+                <div class="insight-meta">
+                  <div class="insight-author">
+                    <div class="insight-avatar">FA</div>
+                    <div>
+                      <strong>Franklina Amoah</strong>
+                      <span>12 Sep 2026 · 5 min read</span>
+                    </div>
+                  </div>
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Technology -->
+          <div
+            class="col-md-4 insight-item"
+            data-category="technology"
+            data-title="the role of ai in modern product development"
+          >
+            <a href="#" class="insight-card h-100">
+              <div class="insight-card-image">
+                <img
+                  src="assets/img/work-hero.avif"
+                  alt="AI in modern product development"
+                />
+              </div>
+              <div class="insight-card-body">
+                <span class="insight-category">TECHNOLOGY</span>
+                <h2>The role of AI in modern product development</h2>
+                <p>
+                  How we're using AI tools to move faster, think deeper and
+                  build better.
+                </p>
+                <div class="insight-meta">
+                  <div class="insight-author">
+                    <div class="insight-avatar">R</div>
+                    <div>
+                      <strong>Rockson</strong>
+                      <span>5 Sep 2026 · 6 min read</span>
+                    </div>
+                  </div>
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Growth -->
+          <div
+            class="col-md-4 insight-item"
+            data-category="growth"
+            data-title="what makes a digital campaign actually work"
+          >
+            <a href="#" class="insight-card h-100">
+              <div class="insight-card-image">
+                <img
+                  src="assets/img/work-hero.avif"
+                  alt="Digital campaign strategy"
+                />
+              </div>
+              <div class="insight-card-body">
+                <span class="insight-category">GROWTH</span>
+                <h2>What makes a digital campaign actually work?</h2>
+                <p>
+                  A practical look at strategy, content and execution — and what
+                  really drives results.
+                </p>
+                <div class="insight-meta">
+                  <div class="insight-author">
+                    <div class="insight-avatar">KB</div>
+                    <div>
+                      <strong>Kekeli Bucker</strong>
+                      <span>28 Aug 2026 · 7 min read</span>
+                    </div>
+                  </div>
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Business -->
+          <div
+            class="col-md-4 insight-item"
+            data-category="business"
+            data-title="5 lessons from ghanas most resilient businesses"
+          >
+            <a href="#" class="insight-card h-100">
+              <div class="insight-card-image">
+                <img
+                  src="assets/img/work-hero.avif"
+                  alt="Ghana's resilient businesses"
+                />
+              </div>
+              <div class="insight-card-body">
+                <span class="insight-category">BUSINESS</span>
+                <h2>5 lessons from Ghana's most resilient businesses</h2>
+                <p>
+                  What successful businesses are doing differently — and how
+                  technology helps them stay ahead.
+                </p>
+                <div class="insight-meta">
+                  <div class="insight-author">
+                    <div class="insight-avatar">EA</div>
+                    <div>
+                      <strong>Ernest Apenteng</strong>
+                      <span>20 Aug 2026 · 6 min read</span>
+                    </div>
+                  </div>
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Culture -->
+          <div
+            class="col-md-4 insight-item"
+            data-category="culture"
+            data-title="what its like to work at busyvine"
+          >
+            <a href="#" class="insight-card h-100">
+              <div class="insight-card-image">
+                <img
+                  src="assets/img/work-hero.avif"
+                  alt="Digital opportunities in Africa"
+                />
+              </div>
+              <div class="insight-card-body">
+                <span class="insight-category">CULTURE</span>
+                <h2>What it's like to work at Busyvine</h2>
+                <p>
+                  A look inside our culture, how we work and what drives our
+                  team.
+                </p>
+                <div class="insight-meta">
+                  <div class="insight-author">
+                    <div class="insight-avatar">DA</div>
+                    <div>
+                      <strong>Dorcas Antwi</strong>
+                      <span>15 Aug 2026 · 4 min read</span>
+                    </div>
+                  </div>
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Industry -->
+          <div
+            class="col-md-4 insight-item"
+            data-category="industry"
+            data-title="the next wave of digital opportunities in africa"
+          >
+            <a href="#" class="insight-card h-100">
+              <div class="insight-card-image">
+                <img
+                  src="assets/img/work-hero.avif"
+                  alt="From idea to impact"
+                />
+              </div>
+
+              <div class="insight-card-body">
+                <span class="insight-category">INDUSTRY</span>
+
+                <h2>The next wave of digital opportunities in Africa</h2>
+
+                <p>
+                  Key trends shaping the next generation of businesses on the
+                  continent.
+                </p>
+
+                <div class="insight-meta">
+                  <div class="insight-author">
+                    <div class="insight-avatar">TD</div>
+                    <div>
+                      <strong>Thomas Dodoo</strong>
+                      <span>8 Aug 2026 · 7 min read</span>
+                    </div>
+                  </div>
+
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- No results -->
+        <p class="insights-empty" id="insightsEmpty" hidden>
+          No articles found.
+        </p>
+
+        <div class="text-center mt-4">
+          <button type="button" class="btn btn-brand">
+            Load more articles
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="insights-newsletter">
+      <div class="container-xl">
+        <div class="newsletter-card">
+          <div class="row align-items-center g-4">
+            <!-- Text -->
+            <div class="col-lg-6">
+              <p class="section-kicker mb-2">STAY AHEAD</p>
+              <h2 class="newsletter-title">
+                Get fresh insights<br />
+                in your inbox.
+              </h2>
+              <p class="newsletter-copy">
+                Join our newsletter for practical ideas on design, technology,
+                growth and building better businesses.
+              </p>
+            </div>
+
+            <!-- Form -->
+            <div class="col-lg-6">
+              <div class="newsletter-form-wrapper">
+                <div class="newsletter-icon">
+                  <i class="bi bi-send"></i>
+                </div>
+
+                <form class="newsletter-form">
+                  <div class="input-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Enter your email address"
+                      aria-label="Email address"
+                      required
+                    />
+
+                    <button type="submit" class="btn btn-brand">
+                      Subscribe
+                      <i class="bi bi-arrow-right ms-2"></i>
+                    </button>
+                  </div>
+                  <p class="newsletter-note">No spam. Just useful things.</p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---FOOTER-->
+    <footer class="site-footer py-5 py-lg-6">
+      <div class="container-xl">
+        <div class="row g-5">
+          <div class="col-lg-3">
+            <img
+              src="assets/img/busyvine-logo.webp"
+              class="footer-logo mb-3"
+              alt="Busyvine"
+            />
+            <p class="text-white-50 mb-4">We build digital things that work.</p>
+            <div class="d-flex gap-3 fs-5">
+              <a href="#" aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i></a
+              ><a href="#" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i></a
+              ><a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a
+              ><a href="#" aria-label="YouTube"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <h3 class="footer-heading">Work</h3>
+            <a href="work.html">All work</a>
+            <a href="#">Case studies</a>
+            <a href="industries.html">Industries</a>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <h3 class="footer-heading">Services</h3>
+            <a href="services-build.html">Build</a>
+            <a href="services-design.html">Design</a
+            ><a href="services-grow.html">Grow</a>
+            <a href="services-support.html">Support</a>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <h3 class="footer-heading">Company</h3>
+            <a href="about.html">About</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3">
+            <h3 class="footer-heading">Resources</h3>
+            <a href="insights.html">Insights</a>
+            <a href="#">Guides</a>
+            <a href="#">Events</a>
+            <div class="mt-4 text-white-50">
+              <i class="bi bi-geo-alt-fill text-brand me-2"></i>Accra, Ghana
+            </div>
+          </div>
+        </div>
+        <hr class="border-secondary my-5" />
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between gap-3 small text-white-50"
+        >
+          <span>©2026 Busyvine. All rights reserved.</span>
+          <div class="d-flex gap-4">
+            <a href="privacy-policy.html">Privacy</a
+            ><a href="terms.html">Terms</a><a href="#">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!---Back-To-Top-->
+    <a
+      href="#top"
+      id="backToTop"
+      class="btn btn-info rounded-circle position-fixed d-flex align-items-center justify-content-center shadow-sm"
+      aria-label="Back to top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
