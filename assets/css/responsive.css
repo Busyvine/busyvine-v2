@@ -1,5 +1,56 @@
 /*=====================================================================
-        MOBILE RESPONSIVENESS
+    MOBILE RESPONSIVENESS
+=====================================================================*/
+
+
+/*=====================================================================
+    DESKTOP
+=====================================================================*/
+
+@media (min-width: 992px) {
+    /*=================================================================
+        BUILD / SERVICE DETAIL HERO
+    =================================================================*/
+
+    .main-header {
+        min-height: 45vh;
+    }
+
+    .main-header .hero-content {
+        padding-top: 100px;
+        padding-bottom: 25px;
+    }
+
+    .main-header h1 {
+        font-size: clamp(2.8rem, 3.5vw, 3.6rem);
+        line-height: .98;
+        margin-bottom: 20px !important;
+    }
+
+    .main-header .hero-copy {
+        max-width: 600px;
+        font-size: 1rem;
+        line-height: 1.45;
+        margin-bottom: 20px !important;
+    }
+
+    .main-header .build-breadcrumb {
+        margin-bottom: 16px !important;
+    }
+
+    .main-header .work-kicker {
+        margin-bottom: 10px !important;
+    }
+
+    .main-header .btn {
+        font-size: .98rem;
+        padding: .7rem 1rem;
+    }
+}
+
+
+/*=====================================================================
+    TABLET
 =====================================================================*/
 
 @media (max-width: 991.98px) {
@@ -8,6 +59,15 @@
         GENERAL
     =================================================================*/
 
+    .main-header {
+        min-height: 60vh;
+    }
+
+    .main-header .hero-content {
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+
     .site-header .brand-logo {
         width: 128px;
     }
@@ -15,9 +75,9 @@
     .hero-overlay {
         background: linear-gradient(
             90deg,
-            rgba(3, 21, 27, 0.92) 0%,
-            rgba(3, 21, 27, 0.78) 60%,
-            rgba(3, 21, 27, 0.45) 100%
+            rgba(3, 21, 27, .92) 0%,
+            rgba(3, 21, 27, .78) 60%,
+            rgba(3, 21, 27, .45) 100%
         );
     }
 
@@ -37,7 +97,6 @@
     /*=================================================================
         WORK - APPROACH
     =================================================================*/
-
     .approach-content {
         min-height: 400px;
         padding: 60px 40px;
@@ -52,37 +111,43 @@
     }
 }
 
-/* Accessibility */
-@media (prefers-reduced-motion: reduce) {
 
-    .partner-logos-track {
-        animation: none;
-    }
-}
-
+/*=====================================================================
+    MOBILE
+=====================================================================*/
 
 @media (max-width: 767.98px) {
 
-    .main-header{
-        padding-top: 10px;
+     .main-header {
+        min-height: auto;
     }
 
-   
-      .partner-logo {
+    .main-header .hero-content {
+        padding-top: 120px;
+        padding-bottom: 25px;
+    }
+
+     .main-header .work-kicker {
+        padding-top: 20px;
+    }
+    /*=================================================================
+        PARTNER LOGOS
+    =================================================================*/
+    .partner-logo {
         flex: 0 0 130px;
         width: 130px;
         padding: 0 10px;
-        font-size: 0.72rem;
+        font-size: .72rem;
     }
 
     .partner-logos-track {
         animation-duration: 20s;
     }
 
+
     /*=================================================================
         WORK - PROJECTS
     =================================================================*/
-
     .project-tools {
         width: 100%;
     }
@@ -97,14 +162,13 @@
     }
 
     .project-filter {
-        padding: 0.5rem 0.85rem;
+        padding: .5rem .85rem;
     }
 
 
     /*=================================================================
         WORK - APPROACH
     =================================================================*/
-
     .approach-content {
         min-height: auto;
         padding: 55px 24px;
@@ -126,7 +190,6 @@
     /*=================================================================
         WORK - TESTIMONIALS
     =================================================================*/
-
     .testimonials-title {
         font-size: 2.4rem;
     }
@@ -136,9 +199,9 @@
     }
 
     .testimonial-card {
+        min-height: 250px;
         padding: 24px;
         gap: 14px;
-        min-height: 250px;
     }
 
     .testimonial-quote {
@@ -146,7 +209,7 @@
     }
 
     .testimonial-text {
-        font-size: 0.85rem;
+        font-size: .85rem;
     }
 
     .testimonial-image {
@@ -195,11 +258,9 @@
     }
 
     .process-intro {
-        margin-left: 0;
         max-width: 100%;
+        margin-left: 0;
     }
-
-    /* 2 × 2 grid on mobile */
 
     .process-steps {
         display: grid;
@@ -217,22 +278,18 @@
 
     .process-step-02 {
         padding-right: 0;
-        border-left: 1px solid rgba(25, 53, 58, 0.1);
+        border-left: 1px solid rgba(25, 53, 58, .1);
     }
 
     .process-step-03 {
         padding-left: 0;
-        border-top: 1px solid rgba(25, 53, 58, 0.1);
+        border-top: 1px solid rgba(25, 53, 58, .1);
     }
 
     .process-step-04 {
         padding-right: 0;
-        border-top: 1px solid rgba(25, 53, 58, 0.1);
-        border-left: 1px solid rgba(25, 53, 58, 0.1);
-    }
-
-    .process-step {
-        border-bottom: 0;
+        border-top: 1px solid rgba(25, 53, 58, .1);
+        border-left: 1px solid rgba(25, 53, 58, .1);
     }
 
     .process-step p {
@@ -313,7 +370,7 @@
     .faq-item {
         min-height: 38px;
         padding: 8px 10px;
-        font-size: 0.65rem;
+        font-size: .65rem;
     }
 
     .faq-cta {
@@ -341,28 +398,40 @@
         margin-bottom: 10px;
     }
 
-   
 
-    /*----SERVICES-BUILD--*/
-    .build-page-hero .build-breadcrumb {
-        margin-bottom: 14px;
-        font-size: 14px;
+    /*=================================================================
+        SERVICES - BUILD
+    =================================================================*/
+
+    .main-header .hero-content {
+        padding-top: 60px;
+        padding-bottom: 40px;
     }
 
-    .build-page-hero .hero-copy {
-        max-width: 330px;
-        font-size: 0.9rem;
+    .main-header h1 {
+        font-size: clamp(2.6rem, 11vw, 3.5rem);
+        line-height: .98;
+    }
+
+    .main-header .build-breadcrumb {
+        margin-bottom: 18px !important;
+        padding-top: 20px;
+    }
+
+    .main-header .btn {
+        font-size: .98rem;
+        padding: .7rem 1rem;
+    }
+
+    .main-header .hero-copy {
+        font-size: .9rem;
         line-height: 1.5;
     }
 
-    .build-page-hero .d-flex {
-        gap: 10px !important;
-    }
 
-    .build-page-hero .btn {
-        font-size: 0.8rem;
-        
-    }
+    /*=================================================================
+        BUILD INTRO
+    =================================================================*/
 
     .build-intro-content {
         height: auto !important;
@@ -383,7 +452,7 @@
         font-size: 1rem;
     }
 
-     .build-intro-image {
+    .build-intro-image {
         height: 300px;
     }
 
@@ -391,7 +460,7 @@
         height: 100%;
     }
 
-     .build-service-card {
+    .build-service-card {
         padding: 18px 15px;
     }
 
@@ -401,22 +470,27 @@
     }
 
     .build-service-card h3 {
-        font-size: 1.2rem;
         margin-bottom: 7px;
+        font-size: 1.2rem;
     }
 
     .build-service-card p {
+        margin-bottom: 14px;
         font-size: 1rem;
         line-height: 1.45;
-        margin-bottom: 14px;
     }
 
     .build-service-link {
-        font-size: 1rem;
         gap: 5px;
+        font-size: 1rem;
     }
 
-     .ready-build-section {
+
+    /*=================================================================
+        READY TO BUILD
+    =================================================================*/
+
+    .ready-build-section {
         padding: 25px 0 35px;
     }
 
@@ -441,17 +515,9 @@
     .ready-build-copy {
         max-width: 280px;
         margin-bottom: 18px !important;
-        font-size: 0.78rem;
+        font-size: .78rem;
         line-height: 1.55;
     }
-
-    .value-card p{
-        font-size: 1rem;
-    }
-
-   
-
-    /* Artwork area remains visible on mobile */
 
     .ready-build-art {
         width: 100%;
@@ -465,49 +531,15 @@
 
     .ready-build-art::before {
         content: "Image here";
-        color: rgba(25, 53, 58, 0.3);
-        font-size: 0.7rem;
+        color: rgba(25, 53, 58, .3);
+        font-size: .7rem;
         font-weight: 600;
     }
 
-    .faq-cta-section {
-        padding: 45px 0 35px;
-    }
 
-    .faq-content {
-        padding-right: 0;
-    }
-
-    .faq-content .btn {
-        margin-bottom: 12px;
-    }
-
-    .faq-title {
-        max-width: 100%;
-        font-size: clamp(2rem, 8.5vw, 2.6rem);
-        line-height: 1.03;
-    }
-
-    
-
-    .faq-list {
-        width: 100%;
-        max-width: 100%;
-        margin-left: 0;
-        padding-top: 0;
-    }
-
-    .faq-item {
-        min-height: 34px;
-        margin-bottom: 4px;
-        padding: 7px 10px;
-
-        font-size: 0.62rem;
-    }
-
-    .faq-item i {
-        font-size: 0.75rem;
-    }
+    /*=================================================================
+        VALUES
+    =================================================================*/
 
     .values-section {
         padding: 50px 0;
@@ -525,7 +557,7 @@
     .values-intro {
         max-width: 100%;
         margin-left: 0;
-        font-size: 0.78rem;
+        font-size: .78rem;
         line-height: 1.55;
     }
 
@@ -545,15 +577,14 @@
 
     .value-card p {
         max-width: 100%;
-        font-size: 0.64rem;
+        font-size: .64rem;
         line-height: 1.5;
     }
 
-    /*=====
-    CONTACT
-    ====*/
-    
 
+    /*=================================================================
+        CONTACT
+    =================================================================*/
 
     .contact-hero h1 {
         font-size: clamp(2.8rem, 12vw, 4rem);
@@ -563,7 +594,7 @@
         font-size: 1rem;
     }
 
-     .contact-info-section {
+    .contact-info-section {
         padding: 55px 0;
     }
 
@@ -578,6 +609,7 @@
     .contact-form-card .btn-brand {
         width: fit-content;
     }
+
     .office-image,
     .office-map {
         min-height: 320px;
@@ -596,12 +628,13 @@
     .office-map-pin {
         left: 42%;
     }
-    .office-image {
-        min-height: 320px;
-    }
 
-    /*---------terms*/
-     .terms-content-section {
+
+    /*=================================================================
+        TERMS / PRIVACY
+    =================================================================*/
+
+    .terms-content-section {
         padding-top: 28px;
     }
 
@@ -619,6 +652,11 @@
         font-size: .82rem;
         line-height: 1.55;
     }
+
+
+    /*=================================================================
+        INSIGHTS
+    =================================================================*/
 
     .insights-toolbar {
         display: flex;
@@ -671,7 +709,7 @@
         font-size: .72rem;
     }
 
-     .insights-grid {
+    .insights-grid {
         row-gap: 18px;
     }
 
@@ -712,7 +750,7 @@
         font-size: 1.35rem;
     }
 
-     .insights-newsletter {
+    .insights-newsletter {
         padding: 15px 0 30px;
     }
 
@@ -758,7 +796,11 @@
         padding-right: .8rem;
     }
 
-    /*------START A PROJECT--*/
+
+    /*=================================================================
+        START A PROJECT
+    =================================================================*/
+
     .project-enquiry-section {
         padding: 20px 0 45px;
     }
@@ -799,25 +841,244 @@
     .project-type {
         min-height: 125px;
     }
+
+
+    /*=================================================================
+        PROJECT INFORMATION
+    =================================================================*/
+
+    .project-info {
+        padding: 12px 0;
+    }
+
+    .project-info-item {
+        min-height: 65px;
+        padding: 8px 10px;
+        border-right: 0;
+    }
+
+    .project-info .col:nth-child(odd) .project-info-item {
+        border-right: 1px solid var(--bv-border);
+    }
+
+    .project-info .col:nth-child(n + 3) .project-info-item {
+        border-top: 1px solid var(--bv-border);
+    }
+
+    .project-info-icon {
+        width: 30px;
+        height: 30px;
+        flex-basis: 30px;
+        font-size: .9rem;
+    }
+
+    .project-info-item span {
+        font-size: .58rem;
+    }
+
+    .project-info-item strong {
+        font-size: .68rem;
+    }
+
+
+    /*=================================================================
+        CASE STUDY
+    =================================================================*/
+    .case-study-content {
+        padding: 25px 0 0;
+    }
+
+    .case-study-block h2 {
+        font-size: 1.05rem;
+    }
+
+    .case-study-block p {
+        font-size: .89rem;
+        line-height: 1.55;
+    }
+
+
+    /*=================================================================
+        CASE STUDY - APPROACH
+    =================================================================*/
+    .approach-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 7px;
+    }
+
+    .approach-card {
+        min-height: 95px;
+        padding: 12px 9px;
+    }
+
+    .approach-card i {
+        margin-bottom: 10px;
+        font-size: 2.25rem;
+    }
+
+    .approach-card strong {
+        font-size: .9rem;
+    }
+
+    .approach-card span {
+        font-size: .79rem;
+    }
+
+
+    /*=================================================================
+        CASE STUDY - RESULTS
+    =================================================================*/
+
+    .results-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px 0;
+    }
+
+    .result-item:nth-child(2) {
+        border-right: 0;
+    }
+
+    .result-item:nth-child(3),
+    .result-item:nth-child(4) {
+        padding-top: 15px;
+        border-top: 1px solid var(--bv-border);
+    }
+
+    .result-item:nth-child(3) {
+        padding-left: 0;
+    }
+
+
+    /*=================================================================
+        CASE STUDY - VISUALS
+    =================================================================*/
+
+    .case-visual-main {
+        height: 260px;
+    }
+
+    .case-visual-small {
+        height: 150px;
+    }
+
+    /*=================================================================
+        CASE STUDY - TESTIMONIAL
+    =================================================================*/
+
+    .case-testimonial {
+        gap: 11px;
+        margin-top: 12px;
+        padding: 18px 16px;
+    }
+
+    .case-testimonial-quote {
+        flex-basis: 24px;
+        font-size: 1.9rem;
+    }
+
+    .case-testimonial-text {
+        max-width: none;
+        margin-bottom: 14px;
+        font-size: .9rem;
+        line-height: 1.5;
+    }
+
+    .case-testimonial-avatar {
+        width: 32px;
+        height: 32px;
+        flex-basis: 32px;
+    }
+
+    .case-testimonial-author strong {
+        font-size: .9rem;
+    }
+
+    .case-testimonial-author span {
+        font-size: .74rem;
+    }
+
+    /*=================================================================
+        RELATED WORK
+    =================================================================*/
+
+    .related-work {
+        padding: 28px 0;
+    }
+
+    .related-work-header {
+        align-items: flex-start;
+        margin-bottom: 14px;
+    }
+
+    .related-work-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .related-work-link {
+        font-size: .68rem;
+    }
+
+    .related-work-content {
+        padding: 11px 12px 13px;
+    }
+
+    .related-work-content h3 {
+        font-size: .75rem;
+    }
+
+    .related-work-content p,
+    .related-work-content span {
+        font-size: .62rem;
+    }
+
+    /*---careers--*/
+     .careers-benefits {
+        padding: 10px 0;
+    }
+
+    .career-benefit {
+        min-height: 125px;
+        padding: 15px 10px;
+    }
+
+    .careers-benefits .col:nth-child(odd) .career-benefit {
+        border-right: 1px solid var(--bv-border);
+    }
+
+    .careers-benefits .col:nth-child(n + 3) .career-benefit {
+        border-top: 1px solid var(--bv-border);
+    }
+
+    .career-benefit-icon {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 10px;
+        font-size: 1.3rem;
+    }
+
+    .career-benefit h3 {
+        font-size: .72rem;
+    }
+
+    .career-benefit p {
+        font-size: .62rem;
+    }
 }
 
 
-
+/*=====================================================================
+    SMALL MOBILE
+=====================================================================*/
 @media (max-width: 575.98px) {
-
-    /*=================================================================
-        GENERAL
-    =================================================================*/
-
     .hero {
-        min-height: 72px;
+        min-height: 80vh;
         background-position: 65% center;
         padding-bottom: 22px;
     }
 
     .hero-content {
-        padding-top: 130px;
-        padding-bottom: 3vh;
+        padding-top: 145px;
+        padding-bottom: 60px;
     }
 
     .hero h1 {
@@ -840,7 +1101,6 @@
     /*=================================================================
         SERVICE CARDS
     =================================================================*/
-
     .service-card {
         min-height: auto;
     }
@@ -853,7 +1113,6 @@
     /*=================================================================
         STATS
     =================================================================*/
-
     .stat {
         gap: 12px;
     }
@@ -866,7 +1125,6 @@
     /*=================================================================
         FOOTER
     =================================================================*/
-
     .footer-logo {
         width: 138px;
     }
@@ -886,10 +1144,14 @@
 
 
 /*=====================================================================
-        ACCESSIBILITY - REDUCED MOTION
+    ACCESSIBILITY - REDUCED MOTION
 =====================================================================*/
 
 @media (prefers-reduced-motion: reduce) {
+
+    .partner-logos-track {
+        animation: none;
+    }
 
     .testimonial-control {
         transition: none;
