@@ -63,8 +63,11 @@
 
 @media (max-width: 767.98px) {
 
-   
+    .main-header{
+        padding-top: 10px;
+    }
 
+   
       .partner-logo {
         flex: 0 0 130px;
         width: 130px;
@@ -341,9 +344,6 @@
    
 
     /*----SERVICES-BUILD--*/
-
-   
-
     .build-page-hero .build-breadcrumb {
         margin-bottom: 14px;
         font-size: 14px;
