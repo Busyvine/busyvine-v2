@@ -3088,7 +3088,6 @@ work inner page
 /* -----------------------------------------
    Role Card
 ----------------------------------------- */
-
 .career-role-card {
     display: block;
     height: 100%;
@@ -3211,4 +3210,50 @@ h2.heading {
 .share-btn:hover {
     border-color: var(--bv-cyan);
     color: var(--bv-cyan);
+}
+
+.industry-card {
+    overflow: hidden;
+    border: 1px solid var(--bv-border);
+    border-radius: 6px;
+    background: #fff;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.industry-card-image {
+    height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bv-surface);
+    color: var(--bv-muted);
+}
+
+.industry-card-body {
+    padding: 38px 18px 18px;
+}
+
+.industry-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(20, 53, 58, .10);
+}
+
+.industry-card-icon {
+    position: absolute;
+    top: -27px;
+    left: 18px;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dceff4;
+    border-radius: 50%;
+    background: #eefaff;
+    color: var(--bv-cyan);
+    font-size: 1.45rem;
+}
+
+.industry-cta {
+    background: #eefaff;
 }
