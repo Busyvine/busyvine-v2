@@ -375,6 +375,24 @@ a {
     text-underline-offset: 4px;
 }
 
+.insight-home {
+    overflow: hidden;
+    border: 1px solid var(--bv-border);
+    border-radius: 5px;
+    background: #fff;
+}
+
+.insight-home img {
+    width: 100%;
+    height: 260px;
+    display: block;
+    object-fit: cover;
+}
+
+.insight-home-body {
+    padding: 17px 16px 15px;
+}
+
 
 /* ================================
    Back To Top
@@ -432,25 +450,20 @@ a {
 }
 
 .project-filter {
+    padding: .65rem 1.2rem;
     border: 1px solid var(--bv-border);
-    background: #f6f8f9;
-    color: var(--bv-ink);
     border-radius: 50px;
-    padding: 0.55rem 1rem;
-    font-size: 0.90rem;
-    font-weight: 600;
-    line-height: 1;
-    transition:
-        background-color 0.2s ease,
-        border-color 0.2s ease,
-        color 0.2s ease,
-        transform 0.2s ease;
+    background: #fff;
+    color: var(--bv-ink);
+    font-size: .9rem;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: all .2s ease;
 }
 
 .project-filter:hover {
     border-color: var(--bv-cyan);
     color: var(--bv-cyan);
-    transform: translateY(-2px);
 }
 
 .project-filter.active {
@@ -1147,6 +1160,10 @@ a {
 .faq-cta-section {
     padding: 26px 0 28px;
     background: #fff;
+}
+
+.faq-cta-buttons .btn{
+    margin-top: 10px;
 }
 
 .faq-content {
@@ -2141,7 +2158,7 @@ a {
 /* Article cards */
 
 .insight-card {
-    height: 100%;
+    height: auto;
     overflow: hidden;
     border: 1px solid var(--bv-border);
     border-radius: 5px;
@@ -2342,7 +2359,7 @@ a {
 
 .newsletter-title {
     margin: 0 0 14px;
-    color: var(--bv-ink);
+    color: var(--bv-border);
     font-size: clamp(2rem, 3.2vw, 2.8rem);
     line-height: 1.02;
     letter-spacing: -.045em;
@@ -2999,8 +3016,8 @@ work inner page
 }
 
 .career-benefit-icon {
-    width: 48px;
-    height: 48px;
+    width: 54px;
+    height: 54px;
     margin-bottom: 14px;
     display: flex;
     align-items: center;
@@ -3023,7 +3040,7 @@ work inner page
 .career-benefit p {
     margin: 0;
     color: var(--bv-muted);
-    font-size: .75rem;
+    font-size: .85rem;
     line-height: 1.4;
 }
 
@@ -3075,7 +3092,7 @@ work inner page
 .career-role-card {
     display: block;
     height: 100%;
-    padding: 17px;
+    padding: 20px;
     border: 1px solid var(--bv-border);
     border-radius: 6px;
     background: #fff;
@@ -3146,4 +3163,52 @@ work inner page
     color: var(--bv-muted);
     font-size: .80rem;
     line-height: 1.55;
+}
+
+.careers-life img {
+    aspect-ratio: 16 / 9;
+}
+
+.heading {
+    line-height: 1.05;
+    letter-spacing: -.04em;
+    font-weight: 800;
+}
+
+h2.heading {
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+}
+
+.newsletter-card {
+    background: var(--bv-deep);
+    margin-top: 10px;
+}
+
+.newsletter-icon {
+    color: var(--bv-cyan);
+    font-size: 3rem;
+    transform: rotate(-15deg);
+}
+
+.newsletter-card p {
+    line-height: 1.5;
+}
+
+.share-btn {
+    width: 54px;
+    height: 54px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--bv-border);
+    border-radius: 50%;
+    background: #fff;
+    color: var(--bv-cyan);
+    font-size: .95rem;
+    transition: all .2s ease;
+}
+
+.share-btn:hover {
+    border-color: var(--bv-cyan);
+    color: var(--bv-cyan);
 }

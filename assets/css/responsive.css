@@ -1,8 +1,6 @@
 /*=====================================================================
     MOBILE RESPONSIVENESS
 =====================================================================*/
-
-
 /*=====================================================================
     DESKTOP
 =====================================================================*/
@@ -130,6 +128,10 @@
      .main-header .work-kicker {
         padding-top: 20px;
     }
+
+      .contact-hero-content {
+        transform: translateY(-30px);
+    }
     /*=================================================================
         PARTNER LOGOS
     =================================================================*/
@@ -164,6 +166,35 @@
     .project-filter {
         padding: .5rem .85rem;
     }
+
+    .project-categories {
+        display: flex;
+        flex-wrap: nowrap !important;
+        width: 100%;
+        overflow-x: auto;
+        gap: 8px;
+        padding-bottom: 4px;
+        scrollbar-width: none;
+    }
+
+    .project-categories::-webkit-scrollbar {
+        display: none;
+    }
+
+    .project-filter {
+        flex: 0 0 auto;
+        white-space: nowrap;
+    }
+
+    .project-tools {
+        width: 100%;
+    }
+
+    .project-search {
+        flex: 1;
+        width: 100%;
+    }
+    
 
 
     /*=================================================================
@@ -461,8 +492,12 @@
     }
 
     .build-service-card {
-        padding: 18px 15px;
+       padding: 18px 15px;
+        min-height: auto;
+
     }
+
+    
 
     .build-service-icon {
         margin-bottom: 12px;
@@ -517,6 +552,10 @@
         margin-bottom: 18px !important;
         font-size: .78rem;
         line-height: 1.55;
+    }
+
+    .ready-build-buttons .btn{
+        margin-bottom: 10px;
     }
 
     .ready-build-art {
@@ -653,6 +692,10 @@
         line-height: 1.55;
     }
 
+    .contact-detail h3 {
+        font-size: 1.1rem;
+    }
+
 
     /*=================================================================
         INSIGHTS
@@ -687,7 +730,7 @@
         border-radius: 5px;
         background: #fff;
         color: var(--bv-ink);
-        font-size: .68rem;
+        font-size: .88rem;
         font-weight: 700;
         white-space: nowrap;
     }
@@ -728,7 +771,7 @@
     }
 
     .insight-card p {
-        font-size: .68rem;
+        font-size: .88rem;
         line-height: 1.5;
     }
 
@@ -761,6 +804,7 @@
     .newsletter-title {
         font-size: 2rem;
         line-height: 1.02;
+        color: #fff;
     }
 
     .newsletter-copy {
@@ -869,15 +913,15 @@
         width: 30px;
         height: 30px;
         flex-basis: 30px;
-        font-size: .9rem;
+        font-size: 30px;
     }
 
     .project-info-item span {
-        font-size: .58rem;
+        font-size: .88rem;
     }
 
     .project-info-item strong {
-        font-size: .68rem;
+        font-size: .78rem;
     }
 
 
@@ -1015,7 +1059,7 @@
     }
 
     .related-work-link {
-        font-size: .68rem;
+        font-size: .88rem;
     }
 
     .related-work-content {
@@ -1023,12 +1067,12 @@
     }
 
     .related-work-content h3 {
-        font-size: .75rem;
+        font-size: 1rem;
     }
 
     .related-work-content p,
     .related-work-content span {
-        font-size: .62rem;
+        font-size: .89rem;
     }
 
     /*---careers--*/
@@ -1053,16 +1097,38 @@
         width: 42px;
         height: 42px;
         margin-bottom: 10px;
-        font-size: 1.3rem;
+        font-size: 1.9rem;
     }
 
     .career-benefit h3 {
-        font-size: .72rem;
+        font-size: .92rem;
     }
 
     .career-benefit p {
-        font-size: .62rem;
+        font-size: .82rem;
     }
+
+     .careers-roles {
+        padding: 45px 0 55px;
+    }
+
+    .careers-section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .careers-view-all {
+        margin-bottom: 0;
+    }
+
+    .newsletter-icon {
+        top: -25px;
+    color: var(--bv-cyan);
+    font-size: 3rem;
+    transform: rotate(-15deg);
+}
+
 }
 
 
@@ -1115,6 +1181,7 @@
     =================================================================*/
     .stat {
         gap: 12px;
+        padding-top: 10px;
     }
 
     .stat strong {

@@ -405,3 +405,22 @@ if (projectTypes.length) {
         });
     });
 }
+
+//Copy the current articles URL to the users clipboard
+const copyArticleLink = document.getElementById("copyArticleLink");
+
+if (copyArticleLink) {
+    copyArticleLink.addEventListener("click", async () => {
+        try {
+            await navigator.clipboard.writeText(window.location.href);
+
+            copyArticleLink.innerHTML = '<i class="bi bi-check2"></i>';
+
+            setTimeout(() => {
+                copyArticleLink.innerHTML = '<i class="bi bi-link-45deg"></i>';
+            }, 1500);
+        } catch (error) {
+            console.error("Could not copy article link:", error);
+        }
+    });
+}
