@@ -56,6 +56,7 @@
     /*=================================================================
         GENERAL
     =================================================================*/
+   
     .main-header {
         min-height: 60vh;
     }
@@ -113,13 +114,12 @@
     MOBILE
 =====================================================================*/
 @media (max-width: 767.98px) {
-
      .main-header {
         min-height: auto;
     }
 
     .main-header .hero-content {
-        padding-top: 120px;
+        padding-top: 80px;
         padding-bottom: 25px;
     }
 
@@ -163,6 +163,8 @@
 
     .project-filter {
         padding: .5rem .85rem;
+        flex: 0 0 auto;
+        white-space: nowrap;
     }
 
     .project-categories {
@@ -179,21 +181,6 @@
         display: none;
     }
 
-    .project-filter {
-        flex: 0 0 auto;
-        white-space: nowrap;
-    }
-
-    .project-tools {
-        width: 100%;
-    }
-
-    .project-search {
-        flex: 1;
-        width: 100%;
-    }
-    
-
 
     /*=================================================================
         WORK - APPROACH
@@ -209,6 +196,7 @@
 
     .approach-copy {
         max-width: 100%;
+        font-size: 19px;
     }
 
     .approach-image {
@@ -287,6 +275,7 @@
     .process-intro {
         max-width: 100%;
         margin-left: 0;
+        font-size: 20px;
     }
 
     .process-steps {
@@ -342,7 +331,7 @@
 
     .why-choose-copy {
         max-width: 100%;
-        font-size: 1rem;
+        font-size: 20px;
     }
 
     .why-choose-image {
@@ -397,6 +386,10 @@
         font-size: .65rem;
     }
 
+    .faq-content {
+        margin-bottom: 15px;
+    }
+
     .faq-cta {
         min-height: 250px;
         padding: 28px 22px;
@@ -426,10 +419,7 @@
     /*=================================================================
         SERVICES - BUILD
     =================================================================*/
-    .main-header .hero-content {
-        padding-top: 60px;
-        padding-bottom: 40px;
-    }
+   
 
     .main-header h1 {
         font-size: clamp(2.6rem, 11vw, 3.5rem);
@@ -471,7 +461,7 @@
 
     .build-intro-copy {
         max-width: 100%;
-        font-size: 1rem;
+        font-size: 20px;
     }
 
     .build-intro-image {
@@ -530,6 +520,7 @@
     .ready-build-title {
         font-size: clamp(2rem, 9vw, 2.6rem);
         line-height: 1.03;
+        text-align: center;
     }
 
     .ready-build-middle {
@@ -537,14 +528,18 @@
     }
 
     .ready-build-copy {
-        max-width: 280px;
-        margin-bottom: 18px !important;
-        font-size: .78rem;
+        width: 100%;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
         line-height: 1.55;
+        text-align: center;
     }
 
     .ready-build-buttons .btn{
         margin-bottom: 10px;
+        
     }
 
     .ready-build-art {
@@ -563,6 +558,19 @@
         font-size: .7rem;
         font-weight: 600;
     }
+
+      .ready-build-content {
+        text-align: center;
+        width: 100%;
+    }
+
+     .ready-build-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
 
 
     /*=================================================================
@@ -584,7 +592,7 @@
     .values-intro {
         max-width: 100%;
         margin-left: 0;
-        font-size: .78rem;
+        font-size: 18px;
         line-height: 1.55;
     }
 
@@ -604,7 +612,7 @@
 
     .value-card p {
         max-width: 100%;
-        font-size: .84rem;
+        font-size: 17px;
         line-height: 1.5;
     }
 
@@ -614,17 +622,14 @@
     =================================================================*/
      .contact-hero-content {
         transform: translateY(-30px);
+        padding-top: 120px;
+        padding-bottom: 18px;
     }
 
     .contact-hero {
         min-height: auto;
         height: auto;
         align-items: flex-start;
-    }
-
-    .contact-hero-content {
-        padding-top: 120px;
-        padding-bottom: 18px;
     }
 
     .contact-hero h1 {
@@ -685,11 +690,11 @@
 
     .terms-number,
     .terms-item h2 {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .terms-item p {
-        font-size: .82rem;
+        font-size: .99rem;
         line-height: 1.55;
     }
 
@@ -1076,6 +1081,17 @@
     }
 
     /*---careers--*/
+    .career-role-top h3{
+        font-size: 1.3rem;
+    }
+    .career-role-card p {
+        font-size: 17px;
+    }
+
+    .career-role-tags span{
+        font-size: 15px;
+    }
+
      .careers-benefits {
         padding: 10px 0;
     }
@@ -1101,11 +1117,11 @@
     }
 
     .career-benefit h3 {
-        font-size: .92rem;
+        font-size: 1.3rem;
     }
 
     .career-benefit p {
-        font-size: .82rem;
+        font-size: 17px;
     }
 
      .careers-roles {
@@ -1118,6 +1134,10 @@
         gap: 8px;
     }
 
+    .careers-section-heading p{
+        font-size: 19px;
+    }
+
     .careers-view-all {
         margin-bottom: 0;
     }
@@ -1127,11 +1147,18 @@
     color: var(--bv-cyan);
     font-size: 3rem;
     transform: rotate(-15deg);
-}
+   }
 
-.text-secondary{
-    font-size: 20px;
-}
+    .careers-application-cta {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px !important;
+    }
+
+    .careers-application-cta a {
+        align-self: center;
+    }
+
 
 .industry-card-icon{
     font-size: 40px;
