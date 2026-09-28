@@ -133,15 +133,23 @@
     /*=================================================================
         PARTNER LOGOS
     =================================================================*/
-    .partner-logo {
-        flex: 0 0 130px;
-        width: 130px;
-        padding: 0 10px;
-        font-size: .72rem;
+    .partner-logos-track {
+        gap: 19px;
     }
 
-    .partner-logos-track {
-        animation-duration: 20s;
+    .partner-logo {
+        flex: 0 0 150px;
+        width: 135px;
+        height: 55px;
+        padding: 0 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .partner-logo img {
+        width: 115px;
+        height: 40px;
+        object-fit: contain;
     }
 
 
@@ -362,6 +370,7 @@
 
     .trusted-logo {
         justify-content: flex-start;
+        padding: 5px;
     }
 
     .trusted-more {
@@ -376,43 +385,56 @@
         padding: 40px 0;
     }
 
-    .faq-title {
-        font-size: 1.4rem;
-    }
-
-    .faq-item {
-        min-height: 38px;
-        padding: 8px 10px;
-        font-size: .65rem;
-    }
-
-    .faq-content {
-        margin-bottom: 15px;
-    }
-
-    .faq-cta {
-        min-height: 250px;
-        padding: 28px 22px;
+      .faq-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-height: auto;
+        padding: 30px 22px;
     }
 
     .faq-cta-content {
-        max-width: 190px;
+        width: 100%;
+        max-width: 100%;
+        order: 1;
     }
 
     .faq-cta-title {
         font-size: 2rem;
+        line-height: 1.05;
     }
 
     .faq-cta-copy {
-        max-width: 185px;
+        width: 100%;
+        max-width: 100%;
+        font-size: 19px;
     }
 
-    .faq-cta-art {
-        width: 40%;
+    .faq-cta-buttons {
+        width: 100%;
+        order: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: nowrap;
     }
 
     .faq-cta-buttons .btn {
-        margin-bottom: 10px;
+        flex: 0 1 auto;
+        white-space: nowrap;
+    }
+
+    .faq-cta-art {
+        position: static;
+        order: 3;
+        width: 100%;
+        min-height: 80px;
+        margin-top: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 

@@ -180,27 +180,9 @@ a {
   color: #008eaf;
 }
 
-.partner-logos .col {
-  font-weight: 800;
-  font-size: 1rem;
-  color: #6f7e81;
-  letter-spacing: 0.02em;
-}
-
-.partner-logo img {
-    max-width: 120px;
-    max-height: 45px;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-}
-
 /* ================================
    PARTNER LOGOS SLIDER
 ================================ */
-
 .partner-logos {
     width: 100%;
     overflow: hidden;
@@ -217,12 +199,23 @@ a {
 .partner-logo {
     flex: 0 0 150px;
     width: 150px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0 15px;
     text-align: center;
     white-space: nowrap;
     color: var(--bv-ink);
     font-size: 0.8rem;
     font-weight: 700;
+}
+
+.partner-logo img {
+    display: block;
+    width: 120px;
+    height: 45px;
+    object-fit: contain;
 }
 
 
