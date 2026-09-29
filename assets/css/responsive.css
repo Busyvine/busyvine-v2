@@ -321,7 +321,9 @@
         margin-bottom: 24px;
     }
 
-   
+    .trust{
+        font-size: 20px;
+    }
 
     .trusted-logos {
         display: grid;
@@ -678,7 +680,27 @@
     }
 
     .contact-detail h3 {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+    }
+
+    .share{
+        font-size: 1.12rem;
+    }
+
+    .topic{
+        font-size: 1.5rem;
+    }
+
+    .contact-detail p{
+        font-size: 1.12rem;
+    }
+
+    .contact-detail a{
+        font-size: 1.12rem;
+    }
+
+    .p-tag{
+        font-size: 0.98rem;
     }
 
 

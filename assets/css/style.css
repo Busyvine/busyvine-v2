@@ -16,7 +16,6 @@ body {
   font-family:
     "Google Sans",
     "Google Sans Text",
-    "Inter",
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
@@ -1034,6 +1033,10 @@ a {
 /* ====================
    Trusted by Businesses
 ===================== */
+   .trust{
+        font-size: 15px;
+    }
+
 .trusted-section {
     padding: 14px 0 16px;
     background: #fff;
@@ -1393,7 +1396,6 @@ a {
 /*=====================================================================
     BUILD - FEATURED WORK
 =====================================================================*/
-
 .build-featured-work {
     padding: 55px 0 60px;
     background: #fff;
@@ -1691,7 +1693,7 @@ a {
 .contact-detail h3 {
     margin: 0 0 3px;
     color: var(--bv-ink);
-    font-size: .9rem;
+    font-size: 1.2rem;
     font-weight: 800;
 }
 
@@ -1710,7 +1712,7 @@ a {
 .contact-detail p:last-child {
     margin: 3px 0 0;
     color: var(--bv-muted);
-    font-size: .72rem;
+    font-size: 0.89rem;
     line-height: 1.4;
 }
 
@@ -1723,7 +1725,7 @@ a {
 .contact-socials h3 {
     margin: 0 0 14px;
     color: var(--bv-ink);
-    font-size: 0.98rem;
+    font-size: 2rem;
     font-weight: 800;
 }
 
@@ -1737,7 +1739,7 @@ a {
     border-radius: 50%;
     color: var(--bv-cyan);
     background: #fff;
-    font-size: 1rem;
+    font-size: 1.2rem;
     transition: .2s ease;
 }
 
@@ -1746,6 +1748,9 @@ a {
     background: #eefaff;
 }
 
+.share{
+    font-size: 1.2rem;
+}
 
 /* Contact Form */
 
@@ -2053,11 +2058,12 @@ a {
     outline: none;
     color: var(--bv-ink);
     background: #fff;
-    font-size: 0.75rem;
+    font-size: 0.80rem;
 }
 
 .insights-search input::placeholder {
     color: var(--bv-muted);
+    font-size: 1rem;
 }
 
 .insights-search input:focus {
@@ -2254,7 +2260,6 @@ a {
 /* ========================================
    INSIGHTS NEWSLETTER
 ======================================== */
-
 .insights-newsletter {
     padding: 20px 0 35px;
     background: #fff;
@@ -2344,7 +2349,6 @@ a {
 /* ========================================
    PROJECT ENQUIRY
 ======================================== */
-
 .project-enquiry-section {
     padding: 26px 0 55px;
     background: #fff;
@@ -2479,7 +2483,7 @@ a {
     border: 1px solid var(--bv-border);
     border-radius: 5px;
     color: var(--bv-ink);
-    font-size: 0.88rem;
+    font-size: 0.90rem;
     box-shadow: none;
 }
 
