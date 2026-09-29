@@ -198,15 +198,6 @@
         padding: 55px 24px;
     }
 
-    .approach-title {
-        font-size: clamp(2.5rem, 12vw, 3.5rem);
-    }
-
-    .approach-copy {
-        max-width: 100%;
-        font-size: 19px;
-    }
-
     .approach-image {
         min-height: 350px;
     }
@@ -233,9 +224,7 @@
         font-size: 2rem;
     }
 
-    .testimonial-text {
-        font-size: .85rem;
-    }
+    
 
     .testimonial-image {
         min-height: 250px;
@@ -275,16 +264,12 @@
     .process-section {
         padding: 60px 0;
     }
-
-    .process-title {
-        font-size: 2.6rem;
-    }
-
+/*
     .process-intro {
         max-width: 100%;
         margin-left: 0;
         font-size: 20px;
-    }
+    }*/
 
     .process-steps {
         display: grid;
@@ -296,29 +281,7 @@
         border: 0;
     }
 
-    .process-step-01 {
-        padding-left: 0;
-    }
-
-    .process-step-02 {
-        padding-right: 0;
-        border-left: 1px solid rgba(25, 53, 58, .1);
-    }
-
-    .process-step-03 {
-        padding-left: 0;
-        border-top: 1px solid rgba(25, 53, 58, .1);
-    }
-
-    .process-step-04 {
-        padding-right: 0;
-        border-top: 1px solid rgba(25, 53, 58, .1);
-        border-left: 1px solid rgba(25, 53, 58, .1);
-    }
-
-    .process-step p {
-        max-width: 100%;
-    }
+    
 
     .process-arrow {
         display: none;
@@ -358,9 +321,7 @@
         margin-bottom: 24px;
     }
 
-    .trusted-title {
-        font-size: 1.3rem;
-    }
+   
 
     .trusted-logos {
         display: grid;
@@ -371,10 +332,6 @@
     .trusted-logo {
         justify-content: flex-start;
         padding: 5px;
-    }
-
-    .trusted-more {
-        grid-column: 1 / -1;
     }
 
 
@@ -424,6 +381,11 @@
     .faq-cta-buttons .btn {
         flex: 0 1 auto;
         white-space: nowrap;
+
+    }
+
+    .faq{
+        margin-bottom: 10px;
     }
 
     .faq-cta-art {
@@ -480,11 +442,11 @@
         font-size: clamp(2rem, 9vw, 2.7rem);
         line-height: 1.05;
     }
-
+     /*
     .build-intro-copy {
         max-width: 100%;
         font-size: 20px;
-    }
+    }*/
 
     .build-intro-image {
         height: 300px;
@@ -503,7 +465,7 @@
 
     .build-service-icon {
         margin-bottom: 12px;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .build-service-card h3 {
@@ -530,6 +492,10 @@
         padding: 25px 0 35px;
     }
 
+    .ready-build{
+        font-size: 20px;
+    }
+
     .ready-build-card {
         min-height: auto;
         display: flex;
@@ -538,12 +504,12 @@
         gap: 24px;
         padding: 28px 24px 24px;
     }
-
+/*
     .ready-build-title {
         font-size: clamp(2rem, 9vw, 2.6rem);
         line-height: 1.03;
         text-align: center;
-    }
+    }*/
 
     .ready-build-middle {
         width: 100%;
@@ -586,6 +552,13 @@
         width: 100%;
     }
 
+    .ready-build-content .section-kicker {
+    font-size: 1rem;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+}
+
      .ready-build-buttons {
         display: flex;
         justify-content: center;
@@ -604,18 +577,6 @@
 
     .values-header {
         margin-bottom: 22px;
-    }
-
-    .values-title {
-        font-size: clamp(2rem, 8.5vw, 2.6rem);
-        line-height: 1.04;
-    }
-
-    .values-intro {
-        max-width: 100%;
-        margin-left: 0;
-        font-size: 18px;
-        line-height: 1.55;
     }
 
     .value-card {
@@ -658,16 +619,8 @@
         font-size: clamp(2.8rem, 12vw, 4rem);
     }
 
-    .contact-hero-copy {
-        font-size: 1rem;
-    }
-
     .contact-info-section {
         padding: 55px 0;
-    }
-
-    .contact-section-title {
-        font-size: 2.3rem;
     }
 
     .contact-form-card {
@@ -709,7 +662,7 @@
         grid-template-columns: 32px 1fr;
         padding: 18px 0;
     }
-
+/*
     .terms-number,
     .terms-item h2 {
         font-size: 1.2rem;
@@ -718,6 +671,10 @@
     .terms-item p {
         font-size: .99rem;
         line-height: 1.55;
+    }*/
+
+    .terms-updated{
+        font-size: 1.2rem;
     }
 
     .contact-detail h3 {
@@ -829,7 +786,7 @@
     .newsletter-card {
         padding: 30px 22px;
     }
-
+/*
     .newsletter-title {
         font-size: 2rem;
         line-height: 1.02;
@@ -839,14 +796,14 @@
     .newsletter-copy {
         max-width: 100%;
         font-size: .72rem;
-    }
+    }*/
 
     .newsletter-form-wrapper {
         padding-top: 15px;
     }
 
     .newsletter-icon {
-        top: -30px;
+        top: -40px;
         right: 5px;
         font-size: 2.2rem;
     }
@@ -910,6 +867,7 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
+        
 
     .project-type {
         min-height: 125px;
@@ -960,14 +918,7 @@
         padding: 25px 0 0;
     }
 
-    .case-study-block h2 {
-        font-size: 1.05rem;
-    }
-
-    .case-study-block p {
-        font-size: .89rem;
-        line-height: 1.55;
-    }
+   
 
 
     /*=================================================================
@@ -1003,17 +954,19 @@
 
     .results-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 18px 0;
+        gap: 18px;
     }
 
-    .result-item:nth-child(2) {
-        border-right: 0;
+     .result-item {
+        border: none;
     }
+
+   
 
     .result-item:nth-child(3),
     .result-item:nth-child(4) {
         padding-top: 15px;
-        border-top: 1px solid var(--bv-border);
+        
     }
 
     .result-item:nth-child(3) {
@@ -1081,21 +1034,15 @@
         margin-bottom: 14px;
     }
 
-    .related-work-header h2 {
-        font-size: 1.2rem;
-    }
+ 
 
-    .related-work-link {
-        font-size: .88rem;
-    }
+    
 
     .related-work-content {
         padding: 11px 12px 13px;
     }
 
-    .related-work-content h3 {
-        font-size: 1rem;
-    }
+   
 
     .related-work-content p,
     .related-work-content span {
@@ -1213,13 +1160,12 @@
     }
 
     .section-space {
-        padding: 68px 0;
+        padding: 88px 0;
     }
 
     .section-space-sm {
         padding: 55px 0;
     }
-
 
     /*=================================================================
         SERVICE CARDS

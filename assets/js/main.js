@@ -38,8 +38,8 @@ if (backToTop) {
     const projects = [...grid.querySelectorAll('.project-item')].map((element, index) => ({
       element,
       index,
-      title: element.querySelector('.project-card-title').textContent.trim(),
-      categories: element.dataset.categories.split(/\s+/),
+      title: element.querySelector('.project-card-title')?.textContent.trim() || '',
+categories: (element.dataset.categories || '').split(/\s+/).filter(Boolean),
       text: normalize([...element.querySelectorAll(
         '.project-card-title, .project-card-category, .project-card-description'
       )].map((part) => part.textContent).join(' ') + ' ' + element.dataset.categories)
