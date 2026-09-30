@@ -687,6 +687,10 @@
         font-size: 1.12rem;
     }
 
+    .share-btn{
+        border-radius: 50%;
+    }
+
     .topic{
         font-size: 1.5rem;
     }
