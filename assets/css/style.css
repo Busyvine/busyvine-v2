@@ -2923,7 +2923,7 @@ work inner page
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-right: 1px solid var(--bv-border);
+   
 }
 
 .careers-benefits .col:last-child .career-benefit {
@@ -2941,7 +2941,7 @@ work inner page
     border-radius: 50%;
     background: #f2fbfe;
     color: var(--bv-cyan);
-    font-size: 1.55rem;
+    font-size: 2rem;
 }
 
 .career-benefit h3 {
